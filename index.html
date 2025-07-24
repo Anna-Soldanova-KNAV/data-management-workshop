@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Lifecycle Workshop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hlavní kruh lifecycle -->
+  <div id="lifecycle">
+    <!-- Tady budou jednotlivé kroky jako tlačítka -->
+    <button class="step" data-step="planning">Plánování</button>
+    <button class="step" data-step="collection">Sběr dat</button>
+    <button class="step" data-step="storage">Ukládání</button>
+    <!-- další kroky ... -->
+  </div>
+
+  <!-- Okénko s popisem kroku -->
+  <div id="description">
+    <h2>Vyberte krok lifecycle</h2>
+    <p>Popis se zobrazí zde</p>
+  </div>
+
+  <!-- Okénko s nástroji -->
+  <div id="tools">
+    <h2>Nástroje</h2>
+    <ul id="tools-list">
+      <!-- sem budou nástroje podle kroku -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
