@@ -58,16 +58,30 @@ body {
   color: white;
 }
 
-/* Popisný box */
-.description-box {
+.info-container {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+/* Společné styly pro oba boxy */
+.description-box,
+.tools-box {
   flex: 1;
   min-width: 300px;
   max-width: 500px;
-  background-color: #ffffff;
-  border-left: 5px solid #3485c6;
-  padding: 20px;
+  min-height: 220px; /* nebo víc, pokud to pořád poskakuje */
+  transition: min-height 0.3s ease, padding 0.3s ease;
+  padding: 1.25rem; /* jednotné */
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Specifické styly */
+.description-box {
+  background-color: #ffffff;
+  border-left: 5px solid #3485c6;
 }
 
 .description-box h2 {
@@ -79,16 +93,9 @@ body {
   line-height: 1.6;
 }
 
-/* Box s nástroji */
 .tools-box {
-  flex: 1;
-  min-width: 300px;
-  max-width: 500px;
   background-color: #f0f8ff;
   border-left: 5px solid #4a99d9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .tools-box h2 {
