@@ -1,42 +1,26 @@
-// Data pro jednotlivé kroky (můžeš upravit a přidat)
-const stepsData = {
-  planning: {
-    description: "Plánování datového managementu, jak data sbírat, ukládat a sdílet.",
-    tools: ["Data Management Plan (DMP) nástroje", "Trello", "Jira"]
-  },
-  collection: {
-    description: "Sběr dat pomocí formulářů, senzorů nebo experimentů.",
-    tools: ["Excel", "Google Forms", "Qualtrics"]
-  },
-  storage: {
-    description: "Ukládání dat na bezpečné a dostupné místo.",
-    tools: ["Dropbox", "Google Drive", "NAS servery"]
-  }
-  // další kroky můžeš doplnit
-};
+document.addEventListener("DOMContentLoaded", () => {
+  const stepTitle = document.getElementById("step-title");
+  const stepDescription = document.getElementById("step-description");
+  const toolsList = document.getElementById("tools-list");
 
-// Najdeme všechny tlačítka kroků
-const buttons = document.querySelectorAll("button.step");
+  document.querySelectorAll(".step").forEach(step => {
+    step.addEventListener("click", () => {
+      const key = step.dataset.step;
+      const data = lifecycleData[key];
 
-// Najdeme boxy, kde budeme měnit text
-const descriptionBox = document.querySelector("#description p");
-const toolsList = document.querySelector("#tools-list");
+      if (data) {
+        stepTitle.textContent = data.title;
+        stepDescription.textContent = data.description;
 
-// Přidáme posluchač událostí na každé tlačítko
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const step = button.getAttribute("data-step");
-    const data = stepsData[step];
-    if (data) {
-      descriptionBox.textContent = data.description;
+        // Vymažeme staré položky
+        toolsList.innerHTML = "";
 
-      // Vyčistíme seznam nástrojů
-      toolsList.innerHTML = "";
-      data.tools.forEach(tool => {
-        const li = document.createElement("li");
-        li.textContent = tool;
-        toolsList.appendChild(li);
-      });
-    }
+        data.tools.forEach(tool => {
+          const li = document.createElement("li");
+          li.textContent = tool;
+          toolsList.appendChild(li);
+        });
+      }
+    });
   });
 });
