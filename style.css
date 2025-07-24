@@ -68,11 +68,12 @@ body {
 .description-box,
 .tools-box {
   flex: 1;
+  width: 100%;           /* přidáno: zabrání zmenšování/roztahování */
   min-width: 300px;
   max-width: 500px;
-  min-height: 220px; /* nebo víc, pokud to pořád poskakuje */
+  min-height: 220px;
   transition: min-height 0.3s ease, padding 0.3s ease;
-  padding: 1.25rem; /* jednotné */
+  padding: 1.25rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
