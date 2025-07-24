@@ -70,16 +70,17 @@ body {
 .description-box,
 .tools-box {
   flex: 1;
-  width: 100%;           /* přidáno: zabrání zmenšování/roztahování */
-  min-width: 300px;
-  max-width: 500px;
-  min-height: 220px;
-  transition: min-height 0.3s ease, padding 0.3s ease;
+  width: 480px;              /* pevná šířka */
+  min-height: 240px;         /* trochu větší, aby se obsah neškubal */
+  max-height: 600px;
+  transition: all 0.3s ease;
   padding: 1.25rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  overflow: auto;            /* přidáno: pro případný overflow obsahu */
 }
+
 
 /* Specifické styly */
 .description-box {
