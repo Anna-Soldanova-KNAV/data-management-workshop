@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <title>Data Lifecycle Workshop</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Datový životní cyklus</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <div class="lifecycle">
+      <!-- Jednotlivé kroky v kruhu -->
+      <div class="step" style="--angle: 0deg" data-step="planning">
+        <span>Plánování</span>
+      </div>
+      <div class="step" style="--angle: 45deg" data-step="collection">
+        <span>Sběr</span>
+      </div>
+      <div class="step" style="--angle: 90deg" data-step="processing">
+        <span>Zpracování</span>
+      </div>
+      <div class="step" style="--angle: 135deg" data-step="analysis">
+        <span>Analýza</span>
+      </div>
+      <div class="step" style="--angle: 180deg" data-step="preservation">
+        <span>Uchování</span>
+      </div>
+      <div class="step" style="--angle: 225deg" data-step="sharing">
+        <span>Sdílení</span>
+      </div>
+      <div class="step" style="--angle: 270deg" data-step="reuse">
+        <span>Znovupoužití</span>
+      </div>
+      <div class="step" style="--angle: 315deg" data-step="archiving">
+        <span>Archivace</span>
+      </div>
+    </div>
 
-  <!-- Hlavní kruh lifecycle -->
-  <div id="lifecycle">
-    <!-- Tady budou jednotlivé kroky jako tlačítka -->
-    <button class="step" data-step="planning">Plánování</button>
-    <button class="step" data-step="collection">Sběr dat</button>
-    <button class="step" data-step="storage">Ukládání</button>
-    <!-- další kroky ... -->
-  </div>
+    <!-- Popisný box -->
+    <div class="description-box">
+      <h2 id="step-title">Vyber krok</h2>
+      <p id="step-description">Klikni na krok v kruhu, a zde se zobrazí popis.</p>
+    </div>
 
-  <!-- Okénko s popisem kroku -->
-  <div id="description">
-    <h2>Vyberte krok lifecycle</h2>
-    <p>Popis se zobrazí zde</p>
-  </div>
-
-  <!-- Okénko s nástroji -->
-  <div id="tools">
-    <h2>Nástroje</h2>
-    <ul id="tools-list">
-      <!-- sem budou nástroje podle kroku -->
-    </ul>
+    <!-- Box s nástroji -->
+    <div class="tools-box">
+      <h2>Nástroje</h2>
+      <ul id="tools-list">
+        <li>Zde budou příklady nástrojů pro vybraný krok</li>
+      </ul>
+    </div>
   </div>
 
   <script src="script.js"></script>
