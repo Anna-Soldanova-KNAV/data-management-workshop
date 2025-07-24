@@ -40,3 +40,4 @@ const lifecycleData = {
     tools: ["CESSDA", "CLARIN", "DAFNE4Data", "Institutional Archive"]
   }
 };
+
