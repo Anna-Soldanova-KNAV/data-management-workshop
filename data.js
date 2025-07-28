@@ -1,41 +1,41 @@
 const lifecycleData = {
   planning: {
-    title: "Plánování",
+    title: "Planning",
     description: "Plánování správy dat ještě před začátkem výzkumu. Například prostřednictvím DMP.",
     tools: ["Data Steward Wizard", "ARGOS", "DMPonline", "Trello", "Notion"]
   },
   collection: {
-    title: "Sběr",
+    title: "Collecting",
     description: "Zajištění správného sběru dat, včetně metadat, dokumentace a formátů.",
     tools: ["REDCap", "Google Forms", "LabArchives", "OpenRefine"]
   },
   processing: {
-    title: "Zpracování",
+    title: "Processing",
     description: "Úprava, čištění a převod dat do vhodných formátů pro další použití.",
     tools: ["Python", "R", "Jupyter Notebook", "OpenRefine"]
   },
   analysis: {
-    title: "Analýza",
+    title: "Analysis",
     description: "Analýza dat za účelem získání výsledků, které odpovídají výzkumným otázkám.",
     tools: ["RStudio", "Python", "SPSS", "MATLAB"]
   },
   preservation: {
-    title: "Uchování",
+    title: "Storing",
     description: "Zajištění dlouhodobé přístupnosti a integrity dat po skončení projektu.",
     tools: ["Archivace do repozitáře", "FAIR principles", "RDA guidelines"]
   },
   sharing: {
-    title: "Sdílení",
+    title: "Sharing",
     description: "Sdílení dat veřejně nebo v rámci týmu, v souladu s právními a etickými požadavky.",
     tools: ["Zenodo", "Figshare", "Open Science Framework", "Institutional Repository"]
   },
   reuse: {
-    title: "Znovupoužití",
+    title: "Reusing",
     description: "Opětovné použití existujících dat pro nové výzkumné účely.",
     tools: ["OpenAIRE", "European Open Science Cloud (EOSC)", "DataCite Search"]
   },
   archiving: {
-    title: "Archivace",
+    title: "Archiving",
     description: "Finální archivace dat v důvěryhodných dlouhodobých úložištích.",
     tools: ["CESSDA", "CLARIN", "DAFNE4Data", "Institutional Archive"]
   }
