@@ -1,61 +1,85 @@
-importedData = {}; // původní data z data.js
-jsonData = []; // data z data.json
+let toolsData = [];
 
-// Načtení JSONu z externího souboru
 fetch('dmtools.json')
   .then(response => response.json())
-  .then(json => {
-    jsonData = json;
-    initialize();
+  .then(data => {
+    toolsData = data;
   })
-  .catch(error => {
-    console.error('Chyba při načítání JSON dat:', error);
-    initialize(); // Spustit i když JSON selže
+  .catch(err => {
+    console.error("Chyba při načítání JSON:", err);
   });
 
-function initialize() {
-  const steps = document.querySelectorAll('.step');
+document.addEventListener("DOMContentLoaded", () => {
+  const steps = document.querySelectorAll(".step");
+  const stepTitle = document.getElementById("step-title");
+  const stepDescription = document.getElementById("step-description");
+  const toolsList = document.getElementById("tools-list");
+
   steps.forEach(step => {
-    step.addEventListener('click', () => {
-      const stepId = step.dataset.step;
-      const titleEl = document.getElementById('step-title');
-      const descEl = document.getElementById('step-description');
-      const toolsEl = document.getElementById('tools-list');
+    step.addEventListener("click", () => {
+      const stepKey = step.dataset.step;
 
-      // Vyčistit obsah
-      toolsEl.innerHTML = '';
+      // Nastav titulek a popis kroku z lifecycleData (předpokládám, že máš)
+      const stepInfo = lifecycleData[stepKey];
+      if (!stepInfo) return;
 
-      // Původní data
-      const original = importedData[stepId];
-      if (original) {
-        titleEl.textContent = original.title;
-        descEl.textContent = original.description;
-        original.tools.forEach(tool => {
-          const li = document.createElement('li');
-          li.textContent = tool;
-          toolsEl.appendChild(li);
+      stepTitle.textContent = stepInfo.title;
+      stepDescription.textContent = stepInfo.description;
+
+      // Vyčisti seznam nástrojů
+      toolsList.innerHTML = "";
+
+      // Filtrování nástrojů, které mají lifecycle_step obsahovat daný krok (trim pro jistotu)
+      const filteredTools = toolsData.filter(tool => 
+        tool.lifecycle_step.some(s => s.trim() === stepKey)
+      );
+
+      if (filteredTools.length === 0) {
+        toolsList.innerHTML = "<li>No tools available for this step.</li>";
+        return;
+      }
+
+      filteredTools.forEach(tool => {
+        const li = document.createElement("li");
+        const name = tool.full_name || tool.id_name || "Unnamed tool";
+        li.textContent = name;
+        li.classList.add("tool-item");
+        li.style.cursor = "pointer";
+
+        // Tooltip / bublina s popisem
+        li.addEventListener("click", (e) => {
+          e.stopPropagation();
+          // Odstran všechny existující tooltipy
+          document.querySelectorAll(".tooltip").forEach(t => t.remove());
+
+          const tooltip = document.createElement("div");
+          tooltip.className = "tooltip";
+          tooltip.textContent = tool.desc_short ? tool.desc_short.replace(/^"+|"+$/g, '') : "No description available.";
+          document.body.appendChild(tooltip);
+
+          // Pozice tooltipu
+          const rect = li.getBoundingClientRect();
+          tooltip.style.position = "absolute";
+          tooltip.style.left = `${rect.left + window.scrollX}px`;
+          tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`;
+          tooltip.style.maxWidth = "300px";
+          tooltip.style.backgroundColor = "white";
+          tooltip.style.border = "1px solid #ccc";
+          tooltip.style.padding = "8px";
+          tooltip.style.borderRadius = "6px";
+          tooltip.style.boxShadow = "0 0 10px rgba(0,0,0,0.2)";
+          tooltip.style.zIndex = 1000;
+
+          // Klik mimo tooltip = tooltip zmizí
+          setTimeout(() => {
+            document.addEventListener("click", () => {
+              tooltip.remove();
+            }, { once: true });
+          }, 0);
         });
-      }
 
-      // JSON doplněk
-      const extra = jsonData.find(item => item.id_name === stepId);
-      if (extra) {
-        // Přidat doplňující popis
-        if (extra.additional_info) {
-          const extraP = document.createElement('p');
-          extraP.textContent = extra.additional_info;
-          descEl.appendChild(extraP);
-        }
-
-        // Přidat doplňkové nástroje
-        if (extra.extra_tools && Array.isArray(extra.extra_tools)) {
-          extra.extra_tools.forEach(tool => {
-            const li = document.createElement('li');
-            li.textContent = tool;
-            toolsEl.appendChild(li);
-          });
-        }
-      }
+        toolsList.appendChild(li);
+      });
     });
   });
-}
+});
