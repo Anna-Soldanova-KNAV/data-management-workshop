@@ -77,7 +77,7 @@ body {
 .step.active {
   background-color: #FF7A01; /* tmavě modrá */
   color: #FFFFFF;
-  border-radius: 6px;
+  border-radius: 50%;
 }
 
 .info {
