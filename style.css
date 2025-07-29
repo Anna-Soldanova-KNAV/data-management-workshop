@@ -27,6 +27,7 @@ body {
 
 .container {
   display: flex;
+  cursor: default;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -37,18 +38,20 @@ body {
 
 .lifecycle {
   position: relative;
-  width: 800px;
-  height: 800px;
+  cursor: default;
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
   margin: 0 auto;
 }
 
 .step {
   position: absolute;
+  cursor: default;
   width: 150px;
   height: 150px;
-  background-color: #FF7A01;
-  color: white;
+  background-color: #FFFFFF;
+  color: #FF7A01;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -64,8 +67,15 @@ body {
   transform-origin: center;
 }
 
+.step:hover {
+  background: #FF7A01;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
 .info {
   display: flex;
+  cursor: default;
   flex-direction: column;
   gap: 100px;
   max-width: 600px;
