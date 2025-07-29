@@ -13,6 +13,17 @@ body {
   padding: 0;
 }
 
+.tooltip {
+  font-size: 0.9em;
+  line-height: 1.3;
+  color: #002E59;
+}
+.tool-item:hover {
+  text-decoration: underline;
+  color: #005b99;
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   align-items: center;
