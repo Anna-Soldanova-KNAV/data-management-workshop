@@ -18,8 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
   steps.forEach(step => {
     step.addEventListener("click", () => {
       const stepKey = step.dataset.step;
+  
+      steps.forEach(s => s.classList.remove("active"));
+      step.classList.add("active");
+    
 
-      // Nastav titulek a popis kroku z lifecycleData (předpokládám, že máš)
+      // Nastav titulek a popis kroku z lifecycleData
       const stepInfo = lifecycleData[stepKey];
       if (!stepInfo) return;
 
