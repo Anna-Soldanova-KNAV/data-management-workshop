@@ -11,6 +11,7 @@ body {
   color: #002E59;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .tooltip {
@@ -66,7 +67,7 @@ body {
 .info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 100px;
   max-width: 600px;
   flex: 1;
 }
