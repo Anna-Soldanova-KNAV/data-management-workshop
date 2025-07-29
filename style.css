@@ -74,6 +74,12 @@ body {
   cursor: pointer;
 }
 
+.step.active {
+  background-color: #FF7A01; /* tmavě modrá */
+  color: #FFFFFF;
+  border-radius: 6px;
+}
+
 .info {
   display: flex;
   cursor: default;
