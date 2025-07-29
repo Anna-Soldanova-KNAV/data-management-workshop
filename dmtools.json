@@ -1,0 +1,369 @@
+[
+  {
+    "id_no":1,
+    "id_name":"kadi",
+    "full_name":"KaDi4Mat",
+    "priority":1.0,
+    "lifecycle_step":[
+      "planning",
+      " collecting"
+    ],
+    "tool_type":"ELN",
+    "domain":"life sciences",
+    "field_1":[
+      "1;2"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/kadi.iam.kit.edu\/\"",
+    "desc_short":"\"Virtual research environment (VRE) that integrates an electronic lab notebook with a repository, enabling researchers to document workflows and manage data in a FAIR-compliant way. It offers modular components, that support customizable automation, metadata-rich data storage, and interdisciplinary collaboration.\"",
+    "desc_full":"\"Flagship in keeping data management as simple as possible. User-friendly graphical interface. Hierarchic dataset aggregation and access control. KaDi ecosystem enables extensive automatisation. Workflow-defined data management with an option to perform ML\/AI-assisted data-driven research.\"",
+    "compatibility":null,
+    "provider":"Karlsruhe Institute of Technology (KIT)",
+    "platform":"0",
+    "demo":"\"https:\/\/demo-kadi4mat.iam.kit.edu\/\"",
+    "license_type":"open source"
+  },
+  {
+    "id_no":2,
+    "id_name":"elab",
+    "full_name":"eLab FTW",
+    "priority":1.0,
+    "lifecycle_step":[
+      "collecting",
+      " planning"
+    ],
+    "tool_type":"ELN",
+    "domain":"life sciences",
+    "field_1":[
+      "1;3"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/www.elabftw.net\/\"",
+    "desc_short":"\"Electronic lab notebook designed to help researchers securely document, organize, and manage their experimental data. It supports compliance with data integrity standards and facilitates collaboration within research teams.\"",
+    "desc_full":"\"Graphical navigation throughout the datasets. With integrated, seriously simplified LIMS. Enables user-defined templates for experiments\/workflows. Drawings and chemical structures\/reactions. Booking instruments. Timestamping.\"",
+    "compatibility":null,
+    "provider":null,
+    "platform":"0",
+    "demo":"\"https:\/\/demo.elabftw.net\/\"",
+    "license_type":"open source"
+  },
+  {
+    "id_no":3,
+    "id_name":"osf",
+    "full_name":"Open Science Framework",
+    "priority":1.0,
+    "lifecycle_step":[
+      "planning",
+      " sharing"
+    ],
+    "tool_type":"organizer;repository;preregistration;",
+    "domain":"agnostic",
+    "field_1":[
+      "1;2;3;4"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/osf.io\/\"",
+    "desc_short":"\"Platform that supports researchers in managing, sharing, and preregistering their research projects. It promotes transparency and collaboration by integrating data, materials, and workflows across the research lifecycle.\"",
+    "desc_full":null,
+    "compatibility":null,
+    "provider":"Center for Open Science ",
+    "platform":"0",
+    "demo":null,
+    "license_type":"open source"
+  },
+  {
+    "id_no":4,
+    "id_name":"csda",
+    "full_name":"Czech Social Science Data Archive",
+    "priority":1.0,
+    "lifecycle_step":[
+      "reusing",
+      " storing_archiving"
+    ],
+    "tool_type":"repository",
+    "domain":"social sciences",
+    "field_1":[
+      "nan"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/archiv.soc.cas.cz\/cz\/\"",
+    "desc_short":"\"Disciplinary data archive - acquires, stores and makes available social science research data.\"",
+    "desc_full":null,
+    "compatibility":null,
+    "provider":"SOU CAS",
+    "platform":"Dataverse",
+    "demo":null,
+    "license_type":"open source"
+  },
+  {
+    "id_no":5,
+    "id_name":"dariah",
+    "full_name":"Digital Research Infrastructure for the Arts and Humanities",
+    "priority":1.0,
+    "lifecycle_step":[
+      "reusing",
+      " storing_archiving"
+    ],
+    "tool_type":"repository",
+    "domain":"humanities",
+    "field_1":[
+      "nan"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/www.dariah.eu\/\"",
+    "desc_short":"\"Infrastructure that supports digitally-enabled research and teaching in the arts and humanities. It provides tools, services, and a collaborative network to help researchers manage, share, and preserve digital research data and methods.\"",
+    "desc_full":null,
+    "compatibility":null,
+    "provider":"MFF UK",
+    "platform":"Dspace",
+    "demo":null,
+    "license_type":"open source"
+  },
+  {
+    "id_no":6,
+    "id_name":"aiscr",
+    "full_name":"Archeologický informační systém České republiky",
+    "priority":1.0,
+    "lifecycle_step":[
+      "reusing",
+      " storing_archiving"
+    ],
+    "tool_type":"repository",
+    "domain":null,
+    "field_1":[
+      "nan"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/www.aiscr.cz\/\"",
+    "desc_short":null,
+    "desc_full":null,
+    "compatibility":null,
+    "provider":"IA CAS",
+    "platform":null,
+    "demo":null,
+    "license_type":null
+  },
+  {
+    "id_no":7,
+    "id_name":"filesend1",
+    "full_name":"FileSender via Cesnet",
+    "priority":1.0,
+    "lifecycle_step":[
+      "organizing_collaborating"
+    ],
+    "tool_type":"transfer",
+    "domain":"agnostic",
+    "field_1":[
+      "nan"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/filesender.cesnet.cz\/\"",
+    "desc_short":"\"FileSender is a secure web-based service for temporarily exchanging very large files (up to 1.9 TB) between two users. Uploaded files are stored for up to one month, after which they are automatically deleted, and file recipients receive a download link via email.\"",
+    "desc_full":null,
+    "compatibility":null,
+    "provider":"CESNET",
+    "platform":"Metacentrum",
+    "demo":null,
+    "license_type":null
+  },
+  {
+    "id_no":8,
+    "id_name":"filesend2",
+    "full_name":"Large File Transfer",
+    "priority":1.0,
+    "lifecycle_step":[
+      "sharing"
+    ],
+    "tool_type":"transfer",
+    "domain":"agnostic",
+    "field_1":[
+      "nan"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/open-science-cloud.ec.europa.eu\/dashboard\/home\"",
+    "desc_short":"\"Service that lets authenticated users securely send arbitrarily large files with resumable uploads, automated retries, and optional API integration into research workflows. It supports controlled, time‑limited file sharing of any size between users via download links or email notifications.\"",
+    "desc_full":"\"Filesender via EU Node is an open-source web application optimized for the secure and efficient transfer of files of any size. It utilizes HTML5 and the FileAPI to bypass traditional browser upload limits, allowing multi-gigabyte file uploads. Security is paramount, with SSL\/TLS encryption for data in transit and optional client-side end-to-end encryption for added protection. Users can control file access and retention periods, ensuring files are accessible only to intended recipients and for a specified duration. Notifications are sent both to senders and recipients, confirming file uploads and downloads.\"",
+    "compatibility":null,
+    "provider":"EK",
+    "platform":"EOSC EU Node",
+    "demo":null,
+    "license_type":"open source"
+  },
+  {
+    "id_no":9,
+    "id_name":"galaxy1",
+    "full_name":"USEGALAXY",
+    "priority":1.0,
+    "lifecycle_step":[
+      "processing"
+    ],
+    "tool_type":"computation;processing",
+    "domain":"life sciences",
+    "field_1":[
+      "nan"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/usegalaxy.cz\/\"",
+    "desc_short":"\"Web-based environment with thousands of maintained bioinformatics and data-analysis tools. Researchers with Czech academic login get significantly higher compute and storage quotas than international Galaxy servers. Ideal for data‑intensive workflows and collaborative analysis in Czech research infrastructure\"",
+    "desc_full":"\"Czech Galaxy instance provided by E-Infra CZ. Galaxy is a web-based platform designed for running computational and statistical analyses with focus on openness and usage of FAIR data. It originally started in biomedical science but nowadays spans numerous scientific domains including ecology, natural language processing, chemistry, climate science, and social sciences.\"",
+    "compatibility":null,
+    "provider":null,
+    "platform":null,
+    "demo":null,
+    "license_type":"open source"
+  },
+  {
+    "id_no":10,
+    "id_name":"dsw",
+    "full_name":"Data Stewardship Wizard",
+    "priority":1.0,
+    "lifecycle_step":[
+      "planning"
+    ],
+    "tool_type":null,
+    "domain":null,
+    "field_1":[
+      "nan"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/researchers.dsw.elixir-europe.org\/wizard\/\"",
+    "desc_short":"\"Web-based tool developed within the ELIXIR infrastructure that guides researchers through building comprehensive Data Management Plans via interactive smart questionnaires. It helps users address FAIR data principles, collaborate with colleagues, and export actionable DMPs in multiple formats for funder compliance and long-term stewardship. Available to Elixir affiliates.\"",
+    "desc_full":null,
+    "compatibility":null,
+    "provider":null,
+    "platform":null,
+    "demo":null,
+    "license_type":"open source"
+  },
+  {
+    "id_no":11,
+    "id_name":"fw",
+    "full_name":"AV CR FAIR Wizard",
+    "priority":1.0,
+    "lifecycle_step":[
+      "planning"
+    ],
+    "tool_type":null,
+    "domain":null,
+    "field_1":[
+      "nan"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/avcr.fair-wizard.com\/\"",
+    "desc_short":"\"Service designed to guide researchers through creating a structured Data Management Plan (DMP) via an interactive questionnaire. It helps users address FAIR data principles, collaborate with colleagues, and export actionable DMPs in multiple formats for funder compliance and long-term stewardship. Available to all CAS affiliates.\"",
+    "desc_full":null,
+    "compatibility":null,
+    "provider":null,
+    "platform":null,
+    "demo":null,
+    "license_type":"Proprieteary"
+  },
+  {
+    "id_no":12,
+    "id_name":"jupiterhub",
+    "full_name":"Interactive Notebooks service",
+    "priority":1.0,
+    "lifecycle_step":[
+      "analyzing"
+    ],
+    "tool_type":"computation",
+    "domain":"agnostic",
+    "field_1":[
+      "nan"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/open-science-cloud.ec.europa.eu\/dashboard\/home\"",
+    "desc_short":"\"JupyterHub-based environment that allows researchers to author, run, and share live notebooks combining code (Python, R, Julia, Octave, MATLAB), narrative text, equations, and visual visualizations within a browser. Fully integrated with EOSC ecosystem services—such as file sync & share storage, compute resource credits, and federated login",
+    "desc_full":"\" The Interactive Notebooks service is a managed instance of JupyterHub, backed by major resource providers and operated in multi-zone setup for better availability. A typical user will connect to the Web interface of the Hub, select a resource size they want to work with, and open an integrated Jupyter environment in their browser. The environment is integrated with additional services and resources in the EOSC ecosystem for ease of access and sharing, such as the OwnCloud sync'n'share service.\"",
+    "compatibility":null,
+    "provider":"EK",
+    "platform":"EOSC EU Node",
+    "demo":null,
+    "license_type":"open source"
+  },
+  {
+    "id_no":13,
+    "id_name":"lumi",
+    "full_name":"LUMI",
+    "priority":1.0,
+    "lifecycle_step":[
+      "analyzing"
+    ],
+    "tool_type":null,
+    "domain":null,
+    "field_1":[
+      "nan"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/docs.it4i.cz\/lumi\/about\/\"",
+    "desc_short":"\"The European High-Performance Computing Joint Undertaking (EuroHPC JU) is pooling European resources to develop top-of-the-range exascale supercomputers for processing big data, based on competitive European technology.\"",
+    "desc_full":null,
+    "compatibility":null,
+    "provider":null,
+    "platform":null,
+    "demo":null,
+    "license_type":null
+  },
+  {
+    "id_no":14,
+    "id_name":"uewbasr",
+    "full_name":"UWebASR",
+    "priority":null,
+    "lifecycle_step":[
+      "processing"
+    ],
+    "tool_type":null,
+    "domain":null,
+    "field_1":[
+      "nan"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/lindat.mff.cuni.cz\/services\/uwebasr\/\"",
+    "desc_short":"\"UWebASR is a user‑friendly, web‑based automatic speech recognition engine for Czech, Slovak, German, English freely available to researchers and requiring no technical knowledge of ASR systems or APIs. It automatically transcribes uploaded audio into a structured XML format, facilitating efficient manual review and post‑processing.\"",
+    "desc_full":null,
+    "compatibility":null,
+    "provider":null,
+    "platform":null,
+    "demo":null,
+    "license_type":null
+  },
+  {
+    "id_no":15,
+    "id_name":"metadata1",
+    "full_name":"Metadata Standards Catalog",
+    "priority":null,
+    "lifecycle_step":[
+      "storing_archiving",
+      " sharing"
+    ],
+    "tool_type":"archive",
+    "domain":"agnostic",
+    "field_1":[
+      "nan"
+    ],
+    "field_2":null,
+    "icon":null,
+    "link":"\"https:\/\/rdamsc.bath.ac.uk\/\"",
+    "desc_short":"\"The aim of the Catalog is to provide researchers, research support staff and developers with access to accurate information about metadata standards, in order inform and enable their use of those standards.\"",
+    "desc_full":null,
+    "compatibility":null,
+    "provider":"Research Data Alliance",
+    "platform":null,
+    "demo":null,
+    "license_type":null
+  }
+]
