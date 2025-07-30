@@ -67,7 +67,7 @@ body {
 }
 
 .lifecycle {
-  --radius: 200px;
+  --radius: 250px;
   position: relative;
   cursor: default;
   width: 500px;
@@ -81,11 +81,11 @@ body {
 .step {
   position: absolute;
   cursor: default;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: #FFFFFF;
   color: #FF7A01;
-  font-size: 1.2em;
+  font-size: 1.5em;
   border: 3px solid #FF7A01;
   border-radius: 50%;
   display: flex;
