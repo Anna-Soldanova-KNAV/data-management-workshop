@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
           tooltip.className = "tooltip";
           tooltip.textContent = tool.desc_short ? tool.desc_short.replace(/^"+|"+$/g, '') : "No description available.";
           tooltip.style.position = "absolute";
-          targetElement.closest('.tools-box').appendChild(tooltip);
+          li.appendChild(tooltip);
 
 
           const rect = li.getBoundingClientRect();
