@@ -53,7 +53,41 @@ document.addEventListener("DOMContentLoaded", () => {
           tooltip.className = "tooltip";
           tooltip.textContent = tool.desc_short ? tool.desc_short.replace(/^"+|"+$/g, '') : "No description available.";
           tooltip.style.position = "absolute";
-          toolsBox.appendChild(tooltip);
+          document.body.appendChild(tooltip);
+
+
+          const rect = li.getBoundingClientRect();
+          const tooltipRect = tooltip.getBoundingClientRect();
+          const tooltipWidth = tooltipRect.width;
+          const tooltipHeight = tooltipRect.height;
+
+          const spaceRight = window.innerWidth - (rect.right + 10);
+          const spaceBottom = window.innerHeight - (rect.bottom + 10);
+
+          let left, top;
+
+          if (spaceRight > tooltipWidth) {
+            // Vpravo
+            left = rect.right + window.scrollX + 10;
+            top = rect.top + window.scrollY;
+          } else if (spaceBottom > tooltipHeight) {
+            // Pod
+            left = rect.left + window.scrollX;
+            top = rect.bottom + window.scrollY + 5;
+          } else {
+            // Nad
+            left = rect.left + window.scrollX;
+            top = rect.top + window.scrollY - tooltipHeight - 5;
+          }
+
+          // Oprava přetékání vpravo
+          if (left + tooltipWidth > window.innerWidth) {
+            left = window.innerWidth - tooltipWidth - 10;
+          }
+
+          tooltip.style.left = `${left}px`;
+          tooltip.style.top = `${top}px`;
+
 
           // Ulož si tooltip a li do konstant, aby je listener správně viděl
           const currentTooltip = tooltip;
