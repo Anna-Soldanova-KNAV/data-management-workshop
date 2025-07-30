@@ -63,16 +63,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // Pozice tooltipu
           const rect = li.getBoundingClientRect();
+          const tooltipWidth = 300; // stejná jako v CSS
+          const tooltipHeight = 100; // přibližná výška
+
+          const spaceRight = window.innerWidth - (rect.right + 10);
+          const spaceBottom = window.innerHeight - (rect.bottom + 10);
+
+          tooltip.classList.add("custom-tooltip");
           tooltip.style.position = "absolute";
-          tooltip.style.left = `${rect.left + window.scrollX}px`;
-          tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`;
-          tooltip.style.maxWidth = "300px";
-          tooltip.style.backgroundColor = "white";
-          tooltip.style.border = "1px solid #ccc";
-          tooltip.style.padding = "8px";
-          tooltip.style.borderRadius = "6px";
-          tooltip.style.boxShadow = "0 0 10px rgba(0,0,0,0.2)";
-          tooltip.style.zIndex = 1000;
+
+          if (spaceRight > tooltipWidth) {
+            // Zobrazit vpravo
+            tooltip.style.left = `${rect.right + window.scrollX + 10}px`;
+            tooltip.style.top = `${rect.top + window.scrollY}px`;
+          } else if (spaceBottom > tooltipHeight) {
+            // Zobrazit pod
+            tooltip.style.left = `${rect.left + window.scrollX}px`;
+            tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`;
+          } else {
+            // Jinak zobrazit nad
+            tooltip.style.left = `${rect.left + window.scrollX}px`;
+            tooltip.style.top = `${rect.top + window.scrollY - tooltipHeight - 5}px`;
+          }
+
 
           // Klik mimo tooltip = tooltip zmizí
           setTimeout(() => {
