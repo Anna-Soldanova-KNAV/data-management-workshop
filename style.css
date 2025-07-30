@@ -120,6 +120,8 @@ body {
 .info {
   display: flex;
   align-self: flex-start;
+  margin-top: 100px;
+  margin-right: 100px;
   cursor: default;
   flex-direction: column;
   gap: 50px;
@@ -135,6 +137,11 @@ body {
   padding: 20px 30px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.description-box {
+  width: 400px;
+  height: 200px;
 }
 
 .tools-box ul {
