@@ -119,6 +119,7 @@ body {
 
 .info {
   display: flex;
+  align-self: flex-start;
   cursor: default;
   flex-direction: column;
   gap: 50px;
