@@ -35,7 +35,7 @@ body {
   font-size: 1em;
   line-height: 1.5;
   color: #002E59;
-  max-width: 400px;
+  width: 600px;
   background-color: white;
   border: 1px solid #002E59;
   padding: 8px;
@@ -141,7 +141,7 @@ body {
 
 .description-box {
   width: 600px;
-  height: 160px;
+  height: 150px;
 }
 
 .tools-box ul {
