@@ -15,6 +15,7 @@ body {
 }
 
 .tooltip {
+  position: absolute;
   font-size: 1em;
   line-height: 1.5;
   color: #002E59;
@@ -25,6 +26,7 @@ body {
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  pointer-events: auto;
 }
 
 .tool-item:hover {
