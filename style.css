@@ -139,6 +139,10 @@ body {
   height: 150px;
 }
 
+.tools-box {
+  overflow: visible;
+}
+
 .tools-box ul {
   padding-left: 20px;
   margin: 0;
