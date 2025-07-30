@@ -14,6 +14,13 @@ body {
   overflow-x: hidden;
 }
 
+.main-title {
+  font-size: 3rem;
+  color: #002E59;
+  text-align: center;
+  margin-top: 40px;
+}
+
 .tooltip {
   position: absolute;
   top: 100%;
