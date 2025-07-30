@@ -14,11 +14,19 @@ body {
   overflow-x: hidden;
 }
 
-.tooltip {
-  font-size: 0.9em;
-  line-height: 1.3;
+.custom-tooltip {
+  font-size: 1em;
+  line-height: 1.5;
   color: #002E59;
+  max-width: 400px;
+  background-color: white;
+  border: 1px solid #002E59;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
+
 .tool-item:hover {
   text-decoration: underline;
   color: #005b99;
