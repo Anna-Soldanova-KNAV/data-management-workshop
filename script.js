@@ -1,7 +1,9 @@
+let toolsData = [];
+
 fetch('dmtools.json')
   .then(response => response.json())
   .then(data => {
-    const toolsData = data;
+    toolsData = data;
 
     document.addEventListener("DOMContentLoaded", () => {
       const steps = document.querySelectorAll(".step");
