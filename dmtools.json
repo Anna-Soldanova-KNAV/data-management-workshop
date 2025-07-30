@@ -14,7 +14,10 @@
       "1;2"
     ],
     "field_2":null,
-    "icon":null,
+    "icon":[
+      "atom_structure.svg",
+      "dna.svg"
+    ],
     "link":"\"https:\/\/kadi.iam.kit.edu\/\"",
     "desc_short":"\"Virtual research environment (VRE) that integrates an electronic lab notebook with a repository, enabling researchers to document workflows and manage data in a FAIR-compliant way. It offers modular components, that support customizable automation, metadata-rich data storage, and interdisciplinary collaboration.\"",
     "desc_full":"\"Flagship in keeping data management as simple as possible. User-friendly graphical interface. Hierarchic dataset aggregation and access control. KaDi ecosystem enables extensive automatisation. Workflow-defined data management with an option to perform ML\/AI-assisted data-driven research.\"",
