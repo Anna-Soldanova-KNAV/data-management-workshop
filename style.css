@@ -27,11 +27,10 @@ body {
 }
 
 .tooltip {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1em;
+  position: fixed !important;
+  margin-bottom: 100px !important;
+  margin-right: 100px !important;
+  font-size: 1.2em;
   line-height: 1.5;
   color: #002E59;
   width: 600px;
