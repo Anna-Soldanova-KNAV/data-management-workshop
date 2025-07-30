@@ -59,7 +59,7 @@ body {
   cursor: default;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 20px;
   padding: 0 40px;
   box-sizing: border-box;
   overflow: hidden;
@@ -67,7 +67,7 @@ body {
 }
 
 .lifecycle {
-  --radius: 250px;
+  --radius: 275px;
   position: relative;
   cursor: default;
   width: 500px;
