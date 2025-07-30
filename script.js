@@ -39,21 +39,47 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       filteredTools.forEach(tool => {
-        const li = document.createElement("li");
-        const name = tool.full_name || tool.id_name || "Unnamed tool";
-        li.textContent = name;
-        li.classList.add("tool-item");
-        li.style.cursor = "pointer";
+  const li = document.createElement("li");
+  li.classList.add("tool-item");
+  li.style.cursor = "pointer";
 
-        li.addEventListener("click", (e) => {
-          e.stopPropagation();
-          document.querySelectorAll(".tooltip").forEach(t => t.remove());
+  // Wrapper pro název a ikony
+  const wrapper = document.createElement("div");
+  wrapper.classList.add("tool-wrapper");
+  wrapper.style.display = "flex";
+  wrapper.style.alignItems = "center";
+  wrapper.style.gap = "0.5em";
 
-          const tooltip = document.createElement("div");
-          tooltip.className = "tooltip";
-          tooltip.textContent = tool.desc_short ? tool.desc_short.replace(/^"+|"+$/g, '') : "No description available.";
-          tooltip.style.position = "absolute";
-          document.body.appendChild(tooltip);
+  // Ikony – pokud existují
+  if (Array.isArray(tool.icon)) {
+    tool.icon.forEach(iconFile => {
+      const icon = document.createElement("img");
+      icon.src = `/icons/${iconFile}`;
+      icon.alt = `${tool.full_name} icon`;
+      icon.style.width = "20px";
+      icon.style.height = "20px";
+      wrapper.appendChild(icon);
+    });
+  }
+
+  // Text názvu
+  const nameSpan = document.createElement("span");
+  nameSpan.textContent = tool.full_name || tool.id_name || "Unnamed tool";
+  wrapper.appendChild(nameSpan);
+
+  // Přidání wrapperu do li
+  li.appendChild(wrapper);
+
+  // Tooltip po kliknutí
+  li.addEventListener("click", (e) => {
+    e.stopPropagation();
+    document.querySelectorAll(".tooltip").forEach(t => t.remove());
+
+    const tooltip = document.createElement("div");
+    tooltip.className = "tooltip";
+    tooltip.textContent = tool.desc_short ? tool.desc_short.replace(/^"+|"+$/g, '') : "No description available.";
+    tooltip.style.position = "absolute";
+    document.body.appendChild(tooltip);
 
 
           const rect = li.getBoundingClientRect();
