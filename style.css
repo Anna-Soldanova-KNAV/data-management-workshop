@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px dashed rgba(255, 0, 0, 0.5); /* červená přerušovaná čára kolem všeho */
 }
 
 body {
@@ -63,7 +62,6 @@ body {
   padding: 0 40px;
   box-sizing: border-box;
   overflow: hidden;
-  outline: 1px dashed rgba(255, 0, 0, 0.5); /* červená přerušovaná čára kolem všeho */
 }
 
 .lifecycle {
@@ -75,7 +73,6 @@ body {
   border-radius: 50%;
   flex-shrink: 0;
   margin: 0 auto;
-  outline: 1px dashed rgba(255, 0, 0, 0.5); /* červená přerušovaná čára kolem všeho */
 }
 
 .step {
@@ -102,7 +99,6 @@ body {
   transform-origin: center;
   margin-left: -75px; /* polovina šířky */
   margin-top: -75px;  /* polovina výšky */
-  outline: 1px dashed rgba(255, 0, 0, 0.5); /* červená přerušovaná čára kolem všeho */
 }
 
 .step:hover {
@@ -127,7 +123,6 @@ body {
   gap: 30px;
   max-width: 600px;
   flex: 0 1 600px;
-  outline: 1px dashed rgba(255, 0, 0, 0.5); /* červená přerušovaná čára kolem všeho */
 }
 
 .description-box,
