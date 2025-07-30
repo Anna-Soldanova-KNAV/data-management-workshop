@@ -67,6 +67,7 @@ body {
 }
 
 .lifecycle {
+  --radius: 200px;
   position: relative;
   cursor: default;
   width: 500px;
@@ -96,7 +97,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   left: 50%;
   top: 50%;
-  transform: rotate(var(--angle)) translateX(170px) rotate(calc(-1 * var(--angle)));
+  transform: rotate(var(--angle)) translateX(var(--radius)) rotate(calc(-1 * var(--angle)));
   transform-origin: center;
   margin-left: -75px; /* polovina šířky */
   margin-top: -75px;  /* polovina výšky */
