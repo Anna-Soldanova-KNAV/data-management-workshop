@@ -26,6 +26,15 @@ body {
   flex-shrink: 0;
 }
 
+.add-your-tool {
+  font-size: 1rem;
+  color: #002E59;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px 0 10px;
+  flex-shrink: 0;
+}
+
 .tooltip {
   position: absolute;
   top: 100%;
