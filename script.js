@@ -6,7 +6,7 @@ fetch('dmtools.json')
     toolsData = data;
   })
   .catch(err => {
-    console.error("Chyba při načítání JSON:", err);
+    console.error("JSON loading error:", err);
   });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -18,23 +18,18 @@ document.addEventListener("DOMContentLoaded", () => {
   steps.forEach(step => {
     step.addEventListener("click", () => {
       const stepKey = step.dataset.step;
-  
+
       steps.forEach(s => s.classList.remove("active"));
       step.classList.add("active");
-    
 
-      // Nastav titulek a popis kroku z lifecycleData
       const stepInfo = lifecycleData[stepKey];
       if (!stepInfo) return;
 
       stepTitle.textContent = stepInfo.title;
       stepDescription.textContent = stepInfo.description;
-
-      // Vyčisti seznam nástrojů
       toolsList.innerHTML = "";
 
-      // Filtrování nástrojů, které mají lifecycle_step obsahovat daný krok (trim pro jistotu)
-      const filteredTools = toolsData.filter(tool => 
+      const filteredTools = toolsData.filter(tool =>
         tool.lifecycle_step.some(s => s.trim() === stepKey)
       );
 
@@ -50,55 +45,57 @@ document.addEventListener("DOMContentLoaded", () => {
         li.classList.add("tool-item");
         li.style.cursor = "pointer";
 
-        // Tooltip / bublina s popisem
         li.addEventListener("click", (e) => {
           e.stopPropagation();
-          // Odstran všechny existující tooltipy
           document.querySelectorAll(".tooltip").forEach(t => t.remove());
 
           const tooltip = document.createElement("div");
           tooltip.className = "tooltip";
           tooltip.textContent = tool.desc_short ? tool.desc_short.replace(/^"+|"+$/g, '') : "No description available.";
+          tooltip.style.position = "absolute";
           document.body.appendChild(tooltip);
 
-          // Pozice tooltipu
           const rect = li.getBoundingClientRect();
-          document.body.appendChild(tooltip); // Nech tooltip vykreslit, ať známe jeho skutečnou velikost
           const tooltipRect = tooltip.getBoundingClientRect();
           const tooltipWidth = tooltipRect.width;
           const tooltipHeight = tooltipRect.height;
 
-
           const spaceRight = window.innerWidth - (rect.right + 10);
           const spaceBottom = window.innerHeight - (rect.bottom + 10);
 
-          tooltip.style.position = "absolute";
+          let left, top;
 
           if (spaceRight > tooltipWidth) {
-            // Zobrazit vpravo
-            tooltip.style.left = `${rect.right + window.scrollX + 10}px`;
-            tooltip.style.top = `${rect.top + window.scrollY}px`;
+            // Vpravo
+            left = rect.right + window.scrollX + 10;
+            top = rect.top + window.scrollY;
           } else if (spaceBottom > tooltipHeight) {
-            // Zobrazit pod
-            tooltip.style.left = `${rect.left + window.scrollX}px`;
-            tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`;
+            // Pod
+            left = rect.left + window.scrollX;
+            top = rect.bottom + window.scrollY + 5;
           } else {
-            // Jinak zobrazit nad
-            tooltip.style.left = `${rect.left + window.scrollX}px`;
-            tooltip.style.top = `${rect.top + window.scrollY - tooltipHeight - 5}px`;
+            // Nad
+            left = rect.left + window.scrollX;
+            top = rect.top + window.scrollY - tooltipHeight - 5;
           }
 
-         // tooltip se nevejde celý: posuň ho zpět
-         if (left + tooltipWidth > window.innerWidth) {
+          // Oprava přetékání vpravo
+          if (left + tooltipWidth > window.innerWidth) {
             left = window.innerWidth - tooltipWidth - 10;
-         }
+          }
 
+          tooltip.style.left = `${left}px`;
+          tooltip.style.top = `${top}px`;
 
-          // Klik mimo tooltip = tooltip zmizí
+          // Chytrý listener – kliknutí mimo tooltip i mimo li ho skryje
           setTimeout(() => {
-            document.addEventListener("click", () => {
-              tooltip.remove();
-            }, { once: true });
+            const outsideClickListener = (event) => {
+              if (!tooltip.contains(event.target) && !li.contains(event.target)) {
+                tooltip.remove();
+                document.removeEventListener("click", outsideClickListener);
+              }
+            };
+            document.addEventListener("click", outsideClickListener);
           }, 0);
         });
 
