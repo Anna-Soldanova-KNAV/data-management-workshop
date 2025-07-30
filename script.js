@@ -87,11 +87,14 @@ document.addEventListener("DOMContentLoaded", () => {
           tooltip.style.left = `${left}px`;
           tooltip.style.top = `${top}px`;
 
-          // Chytrý listener – kliknutí mimo tooltip i mimo li ho skryje
+          // Ulož si tooltip a li do konstant, aby je listener správně viděl
+          const currentTooltip = tooltip;
+          const currentLi = li;
+
           setTimeout(() => {
             const outsideClickListener = (event) => {
-              if (!tooltip.contains(event.target) && !li.contains(event.target)) {
-                tooltip.remove();
+              if (!currentTooltip.contains(event.target) && !currentLi.contains(event.target)) {
+                currentTooltip.remove();
                 document.removeEventListener("click", outsideClickListener);
               }
             };
