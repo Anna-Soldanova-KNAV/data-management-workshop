@@ -27,9 +27,10 @@ body {
 }
 
 .tooltip {
-  position: fixed !important;
-  bottom: 100px !important;
-  right: 100px !important;
+  position: absolute;
+  top: 100%;            /* zobrazí se těsně pod tools-box */
+  left: 0;              /* zarovnané vlevo k tools-box */
+  margin-top: 30px;      /* mezera pod boxem */
   font-size: 1em;
   line-height: 1.5;
   color: #002E59;
