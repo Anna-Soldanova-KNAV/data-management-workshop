@@ -54,6 +54,7 @@ body {
 
 .container {
   display: flex;
+  position: relative;
   flex: 1;                  /* vyplní zbytek výšky pod nadpisem */
   cursor: default;
   align-items: center;
