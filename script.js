@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
           const tooltip = document.createElement("div");
           tooltip.className = "tooltip";
           tooltip.textContent = tool.desc_short ? tool.desc_short.replace(/^"+|"+$/g, '') : "No description available.";
-          tooltip.style.position = "fixed";
-          document.body.appendChild(tooltip);
+          tooltip.style.position = "absolute";
+          toolsBox.appendChild(tooltip);
 
           // Ulož si tooltip a li do konstant, aby je listener správně viděl
           const currentTooltip = tooltip;
