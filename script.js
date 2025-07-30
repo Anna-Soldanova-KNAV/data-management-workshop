@@ -63,13 +63,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // Pozice tooltipu
           const rect = li.getBoundingClientRect();
-          const tooltipWidth = 300; // stejná jako v CSS
-          const tooltipHeight = 100; // přibližná výška
+          document.body.appendChild(tooltip); // Nech tooltip vykreslit, ať známe jeho skutečnou velikost
+          const tooltipRect = tooltip.getBoundingClientRect();
+          const tooltipWidth = tooltipRect.width;
+          const tooltipHeight = tooltipRect.height;
+
 
           const spaceRight = window.innerWidth - (rect.right + 10);
           const spaceBottom = window.innerHeight - (rect.bottom + 10);
 
-          tooltip.classList.add("custom-tooltip");
           tooltip.style.position = "absolute";
 
           if (spaceRight > tooltipWidth) {
@@ -85,6 +87,11 @@ document.addEventListener("DOMContentLoaded", () => {
             tooltip.style.left = `${rect.left + window.scrollX}px`;
             tooltip.style.top = `${rect.top + window.scrollY - tooltipHeight - 5}px`;
           }
+
+         // tooltip se nevejde celý: posuň ho zpět
+         if (left + tooltipWidth > window.innerWidth) {
+            left = window.innerWidth - tooltipWidth - 10;
+         }
 
 
           // Klik mimo tooltip = tooltip zmizí
