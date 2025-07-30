@@ -94,10 +94,6 @@ body {
   box-sizing: border-box;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transform: rotate(var(--angle)) translate(170px) rotate(calc(-1 * var(--angle)));
-  left: 50%;
-  top: 50%;
-  transform-origin: center;
   outline: 1px dashed rgba(255, 0, 0, 0.5); /* červená přerušovaná čára kolem všeho */
 }
 
