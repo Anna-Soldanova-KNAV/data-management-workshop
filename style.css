@@ -124,7 +124,7 @@ body {
   margin-right: 100px;
   cursor: default;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   max-width: 600px;
   flex: 0 1 600px;
   outline: 1px dashed rgba(255, 0, 0, 0.5); /* červená přerušovaná čára kolem všeho */
@@ -141,7 +141,7 @@ body {
 
 .description-box {
   width: 600px;
-  height: 120px;
+  height: 160px;
 }
 
 .tools-box ul {
@@ -156,7 +156,7 @@ body {
 h2 {
   color: #002E59;
   margin-top: 0;
-  margin-bottom: 2px
+  margin-bottom: 5px
 }
 
 /* RESPONSIVE DESIGN */
