@@ -106,7 +106,6 @@ body {
 .description-box,
 .tools-box {
   position: relative;
-  z-index: 1;
   background-color: #F0F0F0;
   padding: 20px 30px;
   border-radius: 10px;
