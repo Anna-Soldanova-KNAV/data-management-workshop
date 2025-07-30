@@ -11,7 +11,10 @@ body {
   color: #002E59;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden; /* zakáže scrollování */
+  height: 100vh;     /* omezí výšku přesně na okno */
+  display: flex;
+  flex-direction: column;
 }
 
 .main-title {
@@ -19,6 +22,8 @@ body {
   color: #002E59;
   text-align: center;
   margin-top: 40px;
+  padding: 20px 0 10px;
+  flex-shrink: 0;
 }
 
 .tooltip {
@@ -48,13 +53,14 @@ body {
 
 .container {
   display: flex;
+  flex: 1;                  /* vyplní zbytek výšky pod nadpisem */
   cursor: default;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   gap: 60px;
-  padding: 40px;
+  padding: 0 40px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .lifecycle {
@@ -63,6 +69,7 @@ body {
   width: 500px;
   height: 500px;
   border-radius: 50%;
+  flex-shrink: 0;
   margin: 0 auto;
 }
 
@@ -107,7 +114,7 @@ body {
   flex-direction: column;
   gap: 50px;
   max-width: 600px;
-  flex: 1;
+  flex: 0 1 600px;
 }
 
 .description-box,
