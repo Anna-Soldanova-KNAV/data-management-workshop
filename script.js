@@ -47,56 +47,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
         li.addEventListener("click", (e) => {
           e.stopPropagation();
-          document.querySelectorAll(".tooltip").forEach(t => t.remove());
 
-          const tooltip = document.createElement("div");
-          tooltip.className = "tooltip";
-          tooltip.textContent = tool.desc_short ? tool.desc_short.replace(/^"+|"+$/g, '') : "No description available.";
-          tooltip.style.position = "absolute";
-          document.body.appendChild(tooltip);
+          // Odstraň předchozí info boxy (v rámci všech <li>)
+          document.querySelectorAll(".tool-info").forEach(t => t.remove());
 
+          // Vytvoř box
+          const infoBox = document.createElement("div");
+          infoBox.className = "tool-info";
 
-          const rect = li.getBoundingClientRect();
-          const tooltipRect = tooltip.getBoundingClientRect();
-          const tooltipWidth = tooltipRect.width;
-          const tooltipHeight = tooltipRect.height;
-
-          const spaceRight = window.innerWidth - (rect.right + 10);
-          const spaceBottom = window.innerHeight - (rect.bottom + 10);
-
-          let left, top;
-
-          if (spaceRight > tooltipWidth) {
-            // Vpravo
-            left = rect.right + window.scrollX + 10;
-            top = rect.top + window.scrollY;
-          } else if (spaceBottom > tooltipHeight) {
-            // Pod
-            left = rect.left + window.scrollX;
-            top = rect.bottom + window.scrollY + 5;
-          } else {
-            // Nad
-            left = rect.left + window.scrollX;
-            top = rect.top + window.scrollY - tooltipHeight - 5;
+          // SVG ikona (pokud existuje)
+          if (tool.icon) {
+            const svg = document.createElement("img");
+            svg.src = `icons/${tool.icon}`;
+            svg.alt = `${name} icon`;
+            svg.classList.add("tool-icon");
+            infoBox.appendChild(svg);
           }
 
-          // Oprava přetékání vpravo
-          if (left + tooltipWidth > window.innerWidth) {
-            left = window.innerWidth - tooltipWidth - 10;
-          }
+          // Popis nástroje
+          const desc = document.createElement("p");
+          desc.textContent = tool.desc_short
+            ? tool.desc_short.replace(/^"+|"+$/g, '')
+            : "No description available.";
+          infoBox.appendChild(desc);
 
-          tooltip.style.left = `${left}px`;
-          tooltip.style.top = `${top}px`;
+          // Přidej box do <li>
+          li.appendChild(infoBox);
 
-
-          // Ulož si tooltip a li do konstant, aby je listener správně viděl
-          const currentTooltip = tooltip;
-          const currentLi = li;
-
+          // Zavři box při kliknutí mimo
           setTimeout(() => {
             const outsideClickListener = (event) => {
-              if (!currentTooltip.contains(event.target) && !currentLi.contains(event.target)) {
-                currentTooltip.remove();
+              if (!infoBox.contains(event.target) && !li.contains(event.target)) {
+                infoBox.remove();
                 document.removeEventListener("click", outsideClickListener);
               }
             };
@@ -109,3 +91,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
