@@ -149,7 +149,8 @@ body {
 }
 
 .tools-box {
-  overflow: visible;
+  max-height: 100px;
+  overflow-y: auto;
 }
 
 .tools-box ul {
