@@ -48,17 +48,20 @@ document.addEventListener("DOMContentLoaded", () => {
         li.addEventListener("click", (e) => {
           e.stopPropagation();
 
-          // Odstraň předchozí info boxy (v rámci všech <li>)
+          // Odstranění předchozích info boxů (v rámci všech <li>)
           document.querySelectorAll(".tool-info").forEach(t => t.remove());
 
-          // Vytvoř box
+          // Vytvoření boxu
           const infoBox = document.createElement("div");
           infoBox.className = "tool-info";
 
-          // SVG ikona (pokud existuje)
-          // Ikony (podpora pro jedno i více SVG souborů)
+          // Ikony, pokud existují (podpora pro jedno i více SVG souborů)
           if (tool.icon) {
             const icons = Array.isArray(tool.icon) ? tool.icon : [tool.icon];
+
+            // Kontejner pro ikony
+            const iconGroup = document.createElement("div");
+            iconGroup.classList.add("tool-icon-group");
 
             icons.forEach(iconFile => {
               const svg = document.createElement("img");
@@ -69,9 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
               svg.onerror = () => {
                 svg.style.display = 'none'; // skryje rozbitý obrázek
               };
-
-              infoBox.appendChild(svg);
+              
+              // Přidání ikony do skupiny
+              iconGroup.appendChild(svg);
             });
+            
+            // Přidání skupiny ikon do infoBoxu
+            infoBox.appendChild(iconGroup);
           }
 
 
@@ -82,10 +89,10 @@ document.addEventListener("DOMContentLoaded", () => {
             : "No description available.";
           infoBox.appendChild(desc);
 
-          // Přidej box do <li>
+          // Přidání info boxu do <li>
           li.appendChild(infoBox);
 
-          // Zavři box při kliknutí mimo
+          // Zavření boxu při kliknutí mimo
           setTimeout(() => {
             const outsideClickListener = (event) => {
               if (!infoBox.contains(event.target) && !li.contains(event.target)) {
