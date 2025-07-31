@@ -194,6 +194,14 @@ h2 {
   color: #002E59;
 }
 
+.tool-icon-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
+  align-items: flex-start;
+}
+
 .tool-icon {
   width: 32px;
   height: 32px;
