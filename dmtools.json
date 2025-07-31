@@ -67,7 +67,7 @@
       "1;2;3;4"
     ],
     "field_2":null,
-    "icon":null,
+    "icon":"infinity.svg",
     "link":"\"https:\/\/osf.io\/\"",
     "desc_short":"\"Platform that supports researchers in managing, sharing, and preregistering their research projects. It promotes transparency and collaboration by integrating data, materials, and workflows across the research lifecycle.\"",
     "desc_full":null,
@@ -92,7 +92,7 @@
       "nan"
     ],
     "field_2":null,
-    "icon":null,
+    "icon":"user.svg",
     "link":"\"https:\/\/archiv.soc.cas.cz\/cz\/\"",
     "desc_short":"\"Disciplinary data archive - acquires, stores and makes available social science research data.\"",
     "desc_full":null,
@@ -117,7 +117,7 @@
       "nan"
     ],
     "field_2":null,
-    "icon":null,
+    "icon":"user.svg",
     "link":"\"https:\/\/www.dariah.eu\/\"",
     "desc_short":"\"Infrastructure that supports digitally-enabled research and teaching in the arts and humanities. It provides tools, services, and a collaborative network to help researchers manage, share, and preserve digital research data and methods.\"",
     "desc_full":null,
@@ -142,7 +142,7 @@
       "nan"
     ],
     "field_2":null,
-    "icon":null,
+    "icon":"user.svg",
     "link":"\"https:\/\/www.aiscr.cz\/\"",
     "desc_short":null,
     "desc_full":null,
@@ -166,7 +166,7 @@
       "nan"
     ],
     "field_2":null,
-    "icon":null,
+    "icon":"infinity.svg",
     "link":"\"https:\/\/filesender.cesnet.cz\/\"",
     "desc_short":"\"FileSender is a secure web-based service for temporarily exchanging very large files (up to 1.9 TB) between two users. Uploaded files are stored for up to one month, after which they are automatically deleted, and file recipients receive a download link via email.\"",
     "desc_full":null,
