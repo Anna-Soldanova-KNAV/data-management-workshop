@@ -117,7 +117,7 @@ body {
 }
 
 .step.active {
-  background-color: #FF7A01; /* tmavě modrá */
+  background-color: #FF7A01;
   color: #FFFFFF;
   border-radius: 50%;
 }
@@ -148,10 +148,13 @@ body {
   height: 150px;
 }
 
-.tools-box {
-  max-height: 100px;
-  overflow-y: auto;
-}
+.tools-box h2 {
+  position: sticky;
+} 
+
+#tools-list {
+  max-height: 250px; /* omezení výšky seznamu */
+  overflow-y: auto;  /* scroll uvnitř seznamu */
 
 .tools-box ul {
   padding-left: 20px;
