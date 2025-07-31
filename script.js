@@ -61,6 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
             svg.src = `icons/${tool.icon}`;
             svg.alt = `${name} icon`;
             svg.classList.add("tool-icon");
+            svg.onerror = () => {
+              svg.style.display = 'none'; // Skryje neplatný obrázek
+            };
+
             infoBox.appendChild(svg);
           }
 
