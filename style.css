@@ -151,13 +151,12 @@ body {
 .tools-box h2 {
   position: sticky;
   top: 0;
-  background-color: #F0F0F0; /* kvůli překrývání obsahu */
-  padding-bottom: 10px;
+  background-color: #F0F0F0;
   z-index: 1;
 } 
 
 #tools-list {
-  max-height: 250px; /* omezení výšky seznamu */
+  max-height: 250px; /* omezení výšky seznamu, upravit podle celkové max výšky okna */
   overflow-y: auto;  /* scroll uvnitř seznamu */
 }  
 
