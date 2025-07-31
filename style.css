@@ -150,15 +150,21 @@ body {
 
 .tools-box h2 {
   position: sticky;
+  top: 0;
+  background-color: #F0F0F0; /* kvůli překrývání obsahu */
+  padding-bottom: 10px;
+  z-index: 1;
 } 
 
 #tools-list {
   max-height: 250px; /* omezení výšky seznamu */
   overflow-y: auto;  /* scroll uvnitř seznamu */
+}  
 
 .tools-box ul {
   padding-left: 20px;
   margin: 0;
+  list-style: disc;
 }
 
 .tools-box li {
