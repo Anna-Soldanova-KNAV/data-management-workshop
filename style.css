@@ -55,7 +55,7 @@ body {
 }
 
 .tool-item:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #005b99;
   cursor: pointer;
 }
