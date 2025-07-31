@@ -56,17 +56,24 @@ document.addEventListener("DOMContentLoaded", () => {
           infoBox.className = "tool-info";
 
           // SVG ikona (pokud existuje)
+          // Ikony (podpora pro jedno i více SVG souborů)
           if (tool.icon) {
-            const svg = document.createElement("img");
-            svg.src = `icons/${tool.icon}`;
-            svg.alt = `${name} icon`;
-            svg.classList.add("tool-icon");
-            svg.onerror = () => {
-              svg.style.display = 'none'; // Skryje neplatný obrázek
-            };
+            const icons = Array.isArray(tool.icon) ? tool.icon : [tool.icon];
 
-            infoBox.appendChild(svg);
+            icons.forEach(iconFile => {
+              const svg = document.createElement("img");
+              svg.src = `icons/${iconFile}`;
+              svg.alt = `${name} icon`;
+              svg.classList.add("tool-icon");
+
+              svg.onerror = () => {
+                svg.style.display = 'none'; // skryje rozbitý obrázek
+              };
+
+              infoBox.appendChild(svg);
+            });
           }
+
 
           // Popis nástroje
           const desc = document.createElement("p");
