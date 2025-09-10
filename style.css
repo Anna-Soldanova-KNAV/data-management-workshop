@@ -66,7 +66,7 @@ body {
   flex: 1;                  /* vyplní zbytek výšky pod nadpisem */
   cursor: default;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
   padding: 0 40px;
   box-sizing: border-box;
@@ -156,7 +156,7 @@ body {
 } 
 
 #tools-list {
-  max-height: 400px; /* omezení výšky seznamu, upravit podle celkové max výšky okna */
+  max-height: 500px; /* omezení výšky seznamu, upravit podle celkové max výšky okna */
   overflow-y: auto;  /* scroll uvnitř seznamu */
 }  
 
@@ -242,7 +242,7 @@ h2 {
 .contact-box p {
   margin: 0;
   font-size: 0.85rem;
-  line-height: 1.3;
+  line-height: 1.0;
 }
 
 .contact-box img {
