@@ -62,34 +62,29 @@ body {
 
 .container {
   display: flex;
-  position: relative;
-  flex: 1;                  /* vyplní zbytek výšky pod nadpisem */
-  cursor: default;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
+  align-items: center;        /* vertical align circle + info together */
+  justify-content: center;    /* keep them centered horizontally */
+  gap: 40px;                  /* nice spacing */
   padding: 0 40px;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: hidden;           /* prevent unwanted scrollbars */
 }
 
 .lifecycle-wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical centering */
-  flex-shrink: 0;
+  align-items: center;        /* center the circle horizontally */
+  justify-content: center;    /* center the circle vertically */
+  flex-shrink: 0;             /* don’t let it collapse */
 }
 
 .lifecycle {
   --radius: 275px;
   position: relative;
-  margin-bottom: 50px;
   cursor: default;
   width: 500px;
   height: 500px;
   border-radius: 50%;
   flex-shrink: 0;
-  margin: 0 auto;
 }
 
 .step {
