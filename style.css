@@ -73,6 +73,13 @@ body {
   overflow: hidden;
 }
 
+.lifecycle-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  flex-shrink: 0;
+}
+
 .lifecycle {
   --radius: 275px;
   position: relative;
