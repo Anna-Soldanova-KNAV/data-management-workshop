@@ -76,6 +76,7 @@ body {
 .lifecycle {
   --radius: 275px;
   position: relative;
+  margin-bottom: 50px;
   cursor: default;
   width: 500px;
   height: 500px;
@@ -156,7 +157,7 @@ body {
 } 
 
 #tools-list {
-  max-height: 500px; /* omezení výšky seznamu, upravit podle celkové max výšky okna */
+  max-height: 700px; /* omezení výšky seznamu, upravit podle celkové max výšky okna */
   overflow-y: auto;  /* scroll uvnitř seznamu */
 }  
 
