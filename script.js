@@ -33,9 +33,15 @@ document.addEventListener("DOMContentLoaded", () => {
       stepDescription.textContent = stepInfo.description;
       toolsList.innerHTML = "";
 
-      const filteredTools = toolsData.filter(tool =>
-        tool.lifecycle_step.some(s => s.trim() === stepKey)
-      );
+      const filteredTools = toolsData
+        .filter(tool =>
+          tool.lifecycle_step.some(s => s.trim() === stepKey)
+        )
+        .sort((a, b) => {
+          const nameA = (a.full_name || a.id_name || "Unnamed tool").toLowerCase();
+          const nameB = (b.full_name || b.id_name || "Unnamed tool").toLowerCase();
+          return nameA.localeCompare(nameB);
+        });
 
       if (filteredTools.length === 0) {
         toolsList.innerHTML = "<li>No tools available for this step.</li>";
