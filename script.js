@@ -3,7 +3,11 @@ let toolsData = [];
 fetch('dmtools.json')
   .then(response => response.json())
   .then(data => {
-    toolsData = data;
+    toolsData = data.sort((a, b) => {
+      const nameA = (a.full_name || "").toLowerCase();
+      const nameB = (b.full_name || "").toLowerCase();
+      return nameA.localeCompare(nameB);
+    });
   })
   .catch(err => {
     console.error("JSON loading error:", err);
