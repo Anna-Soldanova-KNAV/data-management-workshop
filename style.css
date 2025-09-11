@@ -179,7 +179,7 @@ body {
 } 
 
 #tools-list {
-  max-height: calc(100vh - 455px); /* omezení výšky seznamu, upravit podle celkové max výšky okna */
+  max-height: calc(100vh - 460px); /* omezení výšky seznamu, upravit podle celkové max výšky okna */
   overflow-y: auto;  /* scroll uvnitř seznamu */
 }  
 
