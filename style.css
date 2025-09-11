@@ -60,7 +60,7 @@ body {
 }
 
 .tool-item span {
-  transition: all 0.3s ease-in-out; /* 0.3s = délka animace */
+  transition: all 0.2s ease-in-out; /* 0.2s = délka animace */
 }
 
 .tool-item.active span {
@@ -89,7 +89,7 @@ body {
   flex-shrink: 0;
   cursor: default;
   margin: 0 auto;          /* horizontálně vycentrované v containeru */
-  transform: translate(50px, -30px); /* posun vůči středové pozici */
+  transform: translate(80px, -40px); /* posun vůči středové pozici */
 }
 
 .step {
