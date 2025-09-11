@@ -104,6 +104,17 @@ body {
   transform: translate(80px, -40px); /* posun vůči středové pozici */
 }
 
+.lifecycle-center-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* vycentruje přesně uprostřed */
+  width: 200px; 
+  height: auto;
+  pointer-events: none; /* aby klikání na kroky fungovalo bez problémů */
+  z-index: 5;    /* aby nebyl zakryt kroky, nebo uprav podle potřeby */
+}
+
 .step {
   position: absolute;
   cursor: default;
