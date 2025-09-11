@@ -29,13 +29,13 @@ body {
 
 .top-left-wrapper {
   position: fixed;    /* drží se viewportu */
-  top: 50px;
-  left: 50px;
+  top: 100px;
+  left: 100px;
   z-index: 100;       /* aby byl nad ostatními prvky */
 }
 
 .top-left-wrapper img {
-  width: 100px;
+  width: 250px;
   height: auto;
 }
 
