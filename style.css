@@ -9,7 +9,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
   color: #002E59;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin: 0;
   padding: 0;
   overflow: hidden; /* zakáže scrollování */
@@ -263,6 +263,7 @@ h2 {
 .contact-box p {
   margin: 0;
   line-height: 1.0;
+  font-size: 1.1rem;
 }
 
 .contact-box img {
