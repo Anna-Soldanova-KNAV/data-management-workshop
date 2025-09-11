@@ -155,7 +155,7 @@ body {
 } 
 
 #tools-list {
-  max-height: 660px; /* omezení výšky seznamu, upravit podle celkové max výšky okna */
+  max-height: calc(100vh - 420px); /* omezení výšky seznamu, upravit podle celkové max výšky okna */
   overflow-y: auto;  /* scroll uvnitř seznamu */
 }  
 
