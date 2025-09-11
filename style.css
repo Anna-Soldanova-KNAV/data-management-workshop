@@ -36,9 +36,13 @@ body {
 
 .title-image {
   width: 100px;             
-  height: auto;           
+  height: auto;
+  display: block;
 }
 
+.title-image.mirror {
+  transform: scaleX(-1); /* zrcadlově otočí obrázek horizontálně */
+}
 
 .add-your-tool {
   color: #002E59;
