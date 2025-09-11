@@ -58,6 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
         li.addEventListener("click", (e) => {
           e.stopPropagation();
 
+          document.querySelectorAll(".tool-item").forEach(t => t.classList.remove("active"));
+          li.classList.add("active");
+
           // Odstranění předchozích info boxů (v rámci všech <li>)
           document.querySelectorAll(".tool-info").forEach(t => t.remove());
 
