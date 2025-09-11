@@ -27,17 +27,19 @@ body {
   flex-shrink: 0;
 }
 
-.top-left-wrapper {
-  position: fixed;    /* drží se viewportu */
-  top: 50px;
-  left: 100px;
-  z-index: 100;       /* aby byl nad ostatními prvky */
+.title-wrapper {
+  display: flex;           /* horizontální zarovnání */
+  align-items: center;     /* vertikální vycentrování nadpisu a obrázku */
+  justify-content: center; /* střed kontejneru */
+  gap: 15px;               /* mezera mezi nadpisem a obrázkem */
+  margin-top: 40px;        /* odsazení od vrchu stránky */
 }
 
-.top-left-wrapper img {
-  width: 200px;
-  height: auto;
+.title-image {
+  width: 60px;             
+  height: auto;           
 }
+
 
 .add-your-tool {
   color: #002E59;
