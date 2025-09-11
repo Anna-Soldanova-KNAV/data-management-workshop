@@ -60,7 +60,7 @@ body {
 }
 
 .tool-item span {
-  transition: all 0.2s ease-in-out; /* 0.2s = délka animace */
+  transition: all 0.3s ease-in-out; /* 0.3s = délka animace */
 }
 
 .tool-item.active span {
@@ -82,14 +82,14 @@ body {
 
 .lifecycle {
   --radius: 275px;
-  position: absolute;       /* absolutní pozicování vůči body */
-  top: 50%;                 /* vertikální střed stránky */
-  left: 50%;                /* horizontální střed stránky */
+  position: relative;      /* relativně k containeru */
   width: 500px;
   height: 500px;
   border-radius: 50%;
+  flex-shrink: 0;
   cursor: default;
-  transform: translate(-50%, -50%) translate(50px, -30px); 
+  margin: 0 auto;          /* horizontálně vycentrované v containeru */
+  transform: translate(50px, -30px); /* posun vůči středové pozici */
 }
 
 .step {
