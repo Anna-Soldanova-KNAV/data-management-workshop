@@ -1,7 +1,7 @@
 const lifecycleData = {
   planning: {
     title: "Planning",
-    description: "Planning data management before the research starts, for example through Data Management Plans (DMP).",
+    description: "Preparation of data management before a research project or experiment begins, for example by creating a Data Management Plan (DMP).",
   },
   collecting: {
     title: "Collecting",
