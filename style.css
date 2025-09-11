@@ -27,6 +27,18 @@ body {
   flex-shrink: 0;
 }
 
+.top-left-wrapper {
+  position: fixed;    /* drží se viewportu */
+  top: 50px;
+  left: 50px;
+  z-index: 100;       /* aby byl nad ostatními prvky */
+}
+
+.top-left-wrapper img {
+  width: 100px;
+  height: auto;
+}
+
 .add-your-tool {
   color: #002E59;
   text-align: center;
