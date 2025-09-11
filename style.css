@@ -53,7 +53,7 @@ body {
   cursor: default;
 }
 
-.tool-item:hover {
+.tool-item:hover span {
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
