@@ -246,8 +246,9 @@ h2 {
 
 .contact-box img {
   margin-top: 8px;
-  width: 100px;
+  width: 125px;
   height: auto;
+  align-self: center;
 }
 
 .add-your-tool-box {
@@ -272,7 +273,7 @@ h2 {
 }
 
 .add-your-tool-box img {
-  width: 100px;
+  width: 125px;
   height: auto;
 }
 
