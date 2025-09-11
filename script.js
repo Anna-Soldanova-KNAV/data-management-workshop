@@ -50,10 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       filteredTools.forEach(tool => {
         const li = document.createElement("li");
-        const name = tool.full_name || tool.id_name || "Unnamed tool";
-        li.textContent = name;
         li.classList.add("tool-item");
         li.style.cursor = "pointer";
+
+        // text do span, aby se zvýrazňovalo jen toto
+        const span = document.createElement("span");
+        span.textContent = tool.full_name || tool.id_name || "Unnamed tool";
+        li.appendChild(span);
 
         li.addEventListener("click", (e) => {
           e.stopPropagation();
@@ -110,6 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const outsideClickListener = (event) => {
               if (!infoBox.contains(event.target) && !li.contains(event.target)) {
                 infoBox.remove();
+                li.classList.remove("active"); // odstraní aktivní zvýraznění
                 document.removeEventListener("click", outsideClickListener);
               }
             };
