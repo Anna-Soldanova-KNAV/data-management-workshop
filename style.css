@@ -55,11 +55,11 @@ body {
 
 .tool-item:hover {
   text-decoration: none;
-  color: #005b99;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.tool-item.active {
+.tool-item.active span {
   font-weight: bold;
 }
 
