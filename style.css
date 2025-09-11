@@ -59,6 +59,10 @@ body {
   cursor: pointer;
 }
 
+.tool-item span {
+  transition: all 0.2s ease-in-out; /* 0.2s = délka animace */
+}
+
 .tool-item.active span {
   font-weight: bold;
 }
@@ -95,7 +99,7 @@ body {
   height: 200px;
   background-color: #FFFFFF;
   color: #FF7A01;
-  font-size: 1.5em;
+  font-size: 1.4em;
   border: 3px solid #FF7A01;
   border-radius: 50%;
   display: flex;
