@@ -40,7 +40,7 @@ body {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.5;
   color: #002E59;
   width: 600px;
@@ -197,7 +197,7 @@ h2 {
 
 .tool-info p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   line-height: 1.4;
   color: #002E59;
 }
@@ -235,12 +235,12 @@ h2 {
 
 .contact-box h4 {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
 
 .contact-box p {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.0;
 }
 
