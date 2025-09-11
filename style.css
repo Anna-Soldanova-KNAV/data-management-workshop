@@ -63,12 +63,10 @@ body {
 .container {
   display: flex;
   position: relative;
-  flex-direction: column;
-  flex: 1 1 auto;                  /* vyplní zbytek výšky pod nadpisem */
+  flex: 1;                  /* vyplní zbytek výšky pod nadpisem */
   cursor: default;
   align-items: center;
   justify-content: flex-start;
-  height: calc(100vh - 70px);
   gap: 20px;
   padding: 0 40px;
   box-sizing: border-box;
@@ -149,14 +147,6 @@ body {
   height: 150px;
 }
 
-.tools-box {
-  max-height: calc(100vh - 20px); 
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-  max-height: calc(100vh - 260px);
-}
-
 .tools-box h2 {
   position: sticky;
   top: 0;
@@ -165,9 +155,8 @@ body {
 } 
 
 #tools-list {
-  flex: 1 1 auto;
+  max-height: calc(100vh - 40px - 150px); /* omezení výšky seznamu, upravit podle celkové max výšky okna */
   overflow-y: auto;  /* scroll uvnitř seznamu */
-  min-height: 0;
 }  
 
 .tools-box ul {
