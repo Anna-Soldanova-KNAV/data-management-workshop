@@ -147,6 +147,12 @@ body {
   height: 150px;
 }
 
+.tools-box {
+  max-height: calc(100vh - 20px); 
+  display: flex;
+  flex-direction: column;
+}
+
 .tools-box h2 {
   position: sticky;
   top: 0;
@@ -155,7 +161,7 @@ body {
 } 
 
 #tools-list {
-  max-height: calc(100vh - 320px - 20px); /* omezení výšky seznamu, upravit podle celkové max výšky okna */
+  flex: 1;
   overflow-y: auto;  /* scroll uvnitř seznamu */
 }  
 
