@@ -63,10 +63,12 @@ body {
 .container {
   display: flex;
   position: relative;
-  flex: 1;                  /* vyplní zbytek výšky pod nadpisem */
+  flex-direction: column;
+  flex: 1 1 auto;                  /* vyplní zbytek výšky pod nadpisem */
   cursor: default;
   align-items: center;
   justify-content: flex-start;
+  height: calc(100vh - 70px);
   gap: 20px;
   padding: 0 40px;
   box-sizing: border-box;
@@ -152,6 +154,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 0;
+  max-height: calc(100vh - 260px);
 }
 
 .tools-box h2 {
