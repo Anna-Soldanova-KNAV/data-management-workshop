@@ -151,6 +151,7 @@ body {
   max-height: calc(100vh - 20px); 
   display: flex;
   flex-direction: column;
+  min-height: 0;
 }
 
 .tools-box h2 {
@@ -161,8 +162,9 @@ body {
 } 
 
 #tools-list {
-  flex: 1;
+  flex: 1 1 auto;
   overflow-y: auto;  /* scroll uvnitř seznamu */
+  min-height: 0;
 }  
 
 .tools-box ul {
