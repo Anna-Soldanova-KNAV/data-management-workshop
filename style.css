@@ -153,8 +153,8 @@ body {
   cursor: default;
   flex-direction: column;
   gap: 30px;
-  max-width: 610px;
-  flex: 0 0 610px;
+  max-width: 620px;
+  flex: 0 0 620px;
 }
 
 .description-box,
@@ -167,7 +167,7 @@ body {
 }
 
 .description-box {
-  width: 610px;
+  width: 620px;
   height: 150px;
 }
 
