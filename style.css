@@ -76,6 +76,11 @@ body {
   gap: 4px;
 }
 
+.tool-link a {
+  color: #FF7A01;
+}
+
+
 
 .tool-item:hover span {
   text-decoration: none;
