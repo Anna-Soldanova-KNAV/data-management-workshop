@@ -1,0 +1,349 @@
+/* Reset a základní styl */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #002E59;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* zakáže scrollování */
+  height: 100vh;     /* omezí výšku přesně na okno */
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  font-size: 3rem;
+  color: #002E59;
+  text-align: center;
+  padding: 20px 0 10px;
+  flex-shrink: 0;
+}
+
+.title-wrapper {
+  display: flex;           /* horizontální zarovnání */
+  align-items: center;     /* vertikální vycentrování nadpisu a obrázku */
+  justify-content: center; /* střed kontejneru */
+  gap: 15px;               /* mezera mezi nadpisem a obrázkem */
+  margin-top: 40px;        /* odsazení od vrchu stránky */
+}
+
+.title-image {
+  width: 100px;             
+  height: auto;
+  display: block;
+}
+
+.title-image.mirror {
+  transform: scaleX(-1); /* zrcadlově otočí obrázek horizontálně */
+}
+
+.add-your-tool {
+  color: #002E59;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px 0 10px;
+  flex-shrink: 0;
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1.5;
+  color: #002E59;
+  width: 595px;
+  background-color: white;
+  border: 1px solid #002E59;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  pointer-events: auto;
+  cursor: default;
+}
+
+.tool-item:hover span {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tool-item span {
+  transition: all 0.2s ease-in-out; /* 0.2s = délka animace */
+}
+
+.tool-item.active span {
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  flex: 1;                  /* vyplní zbytek výšky pod nadpisem */
+  cursor: default;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.lifecycle {
+  --radius: 275px;
+  position: relative;      /* relativně k containeru */
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: default;
+  margin: 0 auto;          /* horizontálně vycentrované v containeru */
+  transform: translate(80px, -40px); /* posun vůči středové pozici */
+}
+
+.step {
+  position: absolute;
+  cursor: default;
+  width: 200px;
+  height: 200px;
+  background-color: #FFFFFF;
+  color: #FF7A01;
+  font-size: 1.2em;
+  border: 3px solid #FF7A01;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  left: 50%;
+  top: 50%;
+  transform: rotate(var(--angle)) translateX(var(--radius)) rotate(calc(-1 * var(--angle))) translate(-50%, -50%);
+  transform-origin: center;
+}
+
+.step:hover {
+  background: #FF7A01;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.step.active {
+  background-color: #FF7A01;
+  color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 40px;
+  margin-right: 200px;
+  cursor: default;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 620px;
+  flex: 0 1 620px;
+}
+
+.description-box,
+.tools-box {
+  position: relative;
+  background-color: #F0F0F0;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.description-box {
+  width: 620px;
+  height: 150px;
+}
+
+.tools-box h2 {
+  position: sticky;
+  top: 0;
+  background-color: #F0F0F0;
+  z-index: 1;
+} 
+
+#tools-list {
+  max-height: calc(100vh - 463px); /* omezení výšky seznamu, upravit podle celkové max výšky okna */
+  overflow-y: auto;  /* scroll uvnitř seznamu */
+}  
+
+.tools-box ul {
+  padding-left: 20px;
+  margin: 0;
+  list-style: disc;
+}
+
+.tools-box li {
+  margin-bottom: 8px;
+}
+
+h2 {
+  color: #002E59;
+  margin-top: 0;
+  margin-bottom: 5px
+}
+
+.tool-item {
+  position: relative;
+  margin-bottom: 12px;
+  list-style-type: disc;
+}
+
+.tool-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 8px;
+  padding: 12px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 550px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.tool-info p {
+  margin: 0;
+  line-height: 1.4;
+  color: #002E59;
+}
+
+.tool-icon-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
+  align-items: flex-start;
+}
+
+.tool-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.contact-box {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: #002E59;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px; /* space between items */
+}
+
+.contact-box h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.contact-box a {
+  margin: 0;
+  line-height: 1.0;
+  font-size: 1.1rem;
+  color: #002E59;
+}
+
+.contact-box a:hover {
+  color: #FF7A01;
+}
+
+.contact-box img {
+  margin-top: 8px;
+  width: 150px;
+  height: auto;
+  align-self: center;
+}
+
+.add-your-tool-box {
+  position: absolute; /* pinned to viewport */
+  bottom: 20px;
+  right: 20px;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #002E59;
+}
+
+.add-your-tool-box a {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #002E59;
+}
+
+.add-your-tool-box a:hover {
+  color: #FF7A01;
+}
+
+.add-your-tool-box img {
+  width: 150px;
+  height: auto;
+}
+
+
+/* volitelná animace */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 960px) {
+  .container {
+    flex-direction: column;
+    padding: 30px 20px;
+    min-height: auto;
+  }
+
+  .lifecycle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .step {
+    width: 80px;
+    height: 80px;
+    font-size: 0.85rem;
+    transform: rotate(var(--angle)) translate(125px) rotate(calc(-1 * var(--angle)));
+  }
+
+  .info {
+    max-width: 100%;
+    width: 100%;
+  }
+}

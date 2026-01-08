@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data lifecycle</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+  
+<body>
+  
+  <div class="title-wrapper">
+    <img src="icons/data_management.svg" alt="Data Management" class="title-image mirror">
+    <h1 class="main-title">Catalogue of Data Management Tools</h1>
+    <img src="icons/data_management.svg" alt="Data Management" class="title-image">
+  </div>
+
+
+  <div class="container">
+    <div class="lifecycle">
+      <!-- Jednotlivé kroky v kruhu -->
+      <div class="step" style="--angle: 270deg" data-step="planning">
+        <span>Planning</span>
+      </div>
+      <div class="step" style="--angle: 315deg" data-step="collecting">
+        <span>Collecting</span>
+      </div>
+      <div class="step" style="--angle: 0deg" data-step="organizing_collaborating">
+        <span>Organizing &amp; Collaborating</span>
+      </div>
+      <div class="step" style="--angle: 45deg" data-step="processing">
+        <span>Processing</span>
+      </div>
+      <div class="step" style="--angle: 90deg" data-step="analyzing">
+        <span>Analyzing</span>
+      </div>
+      <div class="step" style="--angle: 135deg" data-step="sharing">
+        <span>Sharing</span>
+      </div>
+      <div class="step" style="--angle: 180deg" data-step="storing_archiving">
+        <span>Storing &amp; Archiving</span>
+      </div>
+      <div class="step" style="--angle: 225deg" data-step="reusing">
+        <span>Reusing</span>
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="description-box">
+        <h2 id="step-title">Choose a step</h2>
+        <p id="step-description">Click on any step of data lifecycle, and a description will appear here.</p>
+      </div>
+
+      <div class="tools-box">
+        <h2>Tools</h2>
+        <ul id="tools-list">
+          <li>Here will be examples of tools used in the specific step of data lifecycle.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-box">
+    <h4>Open Science Department</h4>
+    <h4>Library of the Czech Academy of Sciences</h4>
+    <p>
+      <a href="mailto:openscience@knav.cz">openscience@knav.cz</a>
+    </p>
+    <p>
+      <a href="https://openscience.lib.cas.cz" target="_blank">
+      openscience.lib.cas.cz
+      </a>
+    </p>
+    <img src="icons/qr-code_newsletter.svg" alt="QR Code">
+  </div>
+
+  <div class="add-your-tool-box">
+    <h4>
+      <a href="https://padlet.com/knav/data-management-ukzk7vemdfwxmccs" target="_blank">Add your tool</a>
+    </h4>
+  </div>
+
+
+</body>
