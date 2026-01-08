@@ -70,6 +70,13 @@ body {
   cursor: default;
 }
 
+.tool-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+
 .tool-item:hover span {
   text-decoration: none;
   font-weight: bold;
