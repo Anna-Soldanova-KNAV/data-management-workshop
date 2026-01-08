@@ -1,0 +1,1414 @@
+[
+  {
+    "id_name": "kadi",
+    "full_name": "KaDi4Mat",
+    "lifecycle_step": [
+      "planning",
+      "collecting"
+    ],
+    "icon": [
+      "atom_structure.svg",
+      "dna.svg"
+    ],
+    "desc_short": "Virtual research environment integrating an electronic lab notebook with a repository, enabling documentation of workflows and FAIR-compliant data management. Offers modular components supporting customizable automation, metadata-rich storage, and interdisciplinary collaboration.",
+    "link": "https://kadi.iam.kit.edu/"
+  },
+  {
+    "id_name": "elab",
+    "full_name": "eLab FTW",
+    "lifecycle_step": [
+      "collecting",
+      "planning"
+    ],
+    "icon": [
+      "atom_structure.svg",
+      "dna.svg"
+    ],
+    "desc_short": "Electronic laboratory notebook for securely documenting, organizing, and managing experimental data. Supports compliance with data integrity standards and facilitates collaboration within research teams.",
+    "link": "https://www.elabftw.net/"
+  },
+  {
+    "id_name": "osf",
+    "full_name": "Open Science Framework",
+    "lifecycle_step": [
+      "planning",
+      "sharing",
+      "organizing_collaborating",
+      "storing_archiving"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Platform supporting management, sharing, and preregistration of research projects. Promotes transparency and collaboration by integrating data, materials, and workflows across the research lifecycle.",
+    "link": "https://osf.io/"
+  },
+  {
+    "id_name": "csda",
+    "full_name": "Czech Social Science Data Archive",
+    "lifecycle_step": [
+      "reusing",
+      "storing_archiving"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Disciplinary data archive acquiring, storing, and providing access to social science research data.",
+    "link": "https://archiv.soc.cas.cz/cz/"
+  },
+  {
+    "id_name": "dariah",
+    "full_name": "Digital Research Infrastructure for the Arts and Humanities",
+    "lifecycle_step": [
+      "reusing",
+      "storing_archiving"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Infrastructure supporting digitally-enabled research and teaching in the arts and humanities. Provides tools, services, and a collaborative network for managing, sharing, and preserving digital research data and methods.",
+    "link": "https://www.dariah.eu/"
+  },
+  {
+    "id_name": "aiscr",
+    "full_name": "Archaeological Information System of the Czech Republic (AIS CR)",
+    "lifecycle_step": [
+      "reusing",
+      "storing_archiving"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Infrastructure integrating, enhancing, and providing access to a broad range of archaeological data across the Czech Republic, built on the Archaeological Map of the Czech Republic (AMCR) framework. Offers online services including a digital archive, archaeological atlas, Prague-focused portal, medieval cemetery catalogues, and APIs, supporting both professional archaeologists and the public.",
+    "link": "https://www.aiscr.cz/"
+  },
+  {
+    "id_name": "filesend1",
+    "full_name": "FileSender via CESNET",
+    "lifecycle_step": [
+      "organizing_collaborating",
+      "sharing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Secure web-based service for temporary exchange of very large files (up to 1.9 TB) between two users. Uploaded files are stored for up to one month and automatically deleted, with recipients receiving a download link via email.",
+    "link": "https://filesender.cesnet.cz/"
+  },
+  {
+    "id_name": "filesend2",
+    "full_name": "Large File Transfer via EU Node",
+    "lifecycle_step": [
+      "sharing",
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Service enabling authenticated users to securely send arbitrarily large files with resumable uploads, automated retries, and optional API integration into research workflows. Supports controlled, time-limited file sharing of any size between users via download links or email notifications.",
+    "link": "https://open-science-cloud.ec.europa.eu/dashboard/home"
+  },
+  {
+    "id_name": "galaxy1",
+    "full_name": "USEGALAXY",
+    "lifecycle_step": [
+      "processing",
+      "analyzing"
+    ],
+    "icon": [
+      "dna.svg",
+      "atom_structure.svg"
+    ],
+    "desc_short": "Web-based environment offering thousands of maintained bioinformatics and data-analysis tools. Users with Czech academic login receive significantly higher compute and storage quotas than international servers. Suited for data-intensive workflows and collaborative analysis within Czech research infrastructure.",
+    "link": "https://usegalaxy.cz/"
+  },
+  {
+    "id_name": "dsw",
+    "full_name": "Data Stewardship Wizard",
+    "lifecycle_step": [
+      "planning"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Web-based tool within the ELIXIR infrastructure guiding users in building comprehensive Data Management Plans through interactive smart questionnaires. Supports addressing FAIR data principles, collaboration with colleagues, and exporting actionable DMPs in multiple formats for funder compliance and long-term stewardship. Available to ELIXIR affiliates.",
+    "link": "https://researchers.dsw.elixir-europe.org/wizard/"
+  },
+  {
+    "id_name": "fw",
+    "full_name": "FAIR Wizard",
+    "lifecycle_step": [
+      "planning"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Service guiding creation of structured Data Management Plans via an interactive questionnaire, based on the Data Stewardship Wizard (DSW) platform. Supports addressing FAIR data principles, collaboration with colleagues, and exporting actionable DMPs in multiple formats for funder compliance and long-term stewardship.",
+    "link": "https://avcr.fair-wizard.com/"
+  },
+  {
+    "id_name": "jupiterhub",
+    "full_name": "Interactive Notebooks service via EU Node",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "JupyterHub-based environment for authoring, running, and sharing live notebooks that combine code (Python, R, Julia, Octave, MATLAB), narrative text, equations, and visualizations in a browser. Fully integrated with EOSC ecosystem services, including file sync & share storage, compute resource credits, and federated login.",
+    "link": "https://open-science-cloud.ec.europa.eu/dashboard/home"
+  },
+  {
+    "id_name": "uewbasr",
+    "full_name": "UWebASR",
+    "lifecycle_step": [
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "User-friendly, web-based automatic speech recognition engine for Czech, Slovak, German, and English, freely available to researchers and requiring no technical knowledge of ASR systems or APIs. Automatically transcribes uploaded audio into structured XML format, facilitating efficient manual review and post-processing.",
+    "link": "https://lindat.mff.cuni.cz/services/uwebasr/"
+  },
+  {
+    "id_name": "metadata1",
+    "full_name": "Metadata Standards Catalog",
+    "lifecycle_step": [
+      "storing_archiving",
+      "sharing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Catalog providing access to accurate information about metadata standards to inform and enable their use by researchers, research support staff, and developers.",
+    "link": "https://rdamsc.bath.ac.uk/"
+  },
+  {
+    "id_name": "transkribus",
+    "full_name": "Transkribus",
+    "lifecycle_step": [
+      "processing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Service enabling automatic text recognition, seamless editing, effortless collaboration, and custom AI training for digitizing and interpreting historical documents of any form.",
+    "link": "https://www.transkribus.org/"
+  },
+  {
+    "id_name": "openbis",
+    "full_name": "OpenBIS",
+    "lifecycle_step": [
+      "collecting",
+      "organizing_collaborating",
+      "planning"
+    ],
+    "icon": [
+      "atom_structure.svg",
+      "dna.svg"
+    ],
+    "desc_short": "Data management platform for organizing, storing, and sharing research data in a structured way to support collaboration and reuse. Combines inventory management, electronic laboratory notebook linking experiments with materials, samples, and protocols, access and rights control, and integrations with analysis environments such as Jupyter notebooks and APIs",
+    "link": "https://openbis.ch/"
+  },
+  {
+    "id_name": "nomado",
+    "full_name": "NOMAD Oasis",
+    "lifecycle_step": [
+      "collecting",
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "atom_structure.svg",
+      "dna.svg"
+    ],
+    "desc_short": "Web-based platform for managing and sharing computational research data (simulations, calculations, workflows) in a structured, reproducible way. Provides automated metadata extraction, data versioning, and provenance tracking, primarily used in materials science, chemistry, and physics to support collaboration and data reuse.",
+    "link": "https://nomad-lab.eu/nomad-lab/nomad-oasis.html"
+  },
+  {
+    "id_name": "chemotion",
+    "full_name": "Chemotion",
+    "lifecycle_step": [
+      "collecting",
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "atom_structure.svg",
+      "dna.svg"
+    ],
+    "desc_short": "Open-source repository and electronic laboratory notebook for organizing, storing, and sharing chemical compounds, reactions, and experimental data in a structured, searchable way. Includes chemical structure editor, reaction and compound databases, and collaboration tools to support management and discovery of chemical data.",
+    "link": "https://chemotion.net/"
+  },
+  {
+    "id_name": "github",
+    "full_name": "Github",
+    "lifecycle_step": [
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "infinity.svg",
+      "monitor.svg"
+    ],
+    "desc_short": "Platform for sharing, collaborating, and version-controlling code, manuscripts, and other digital research outputs to support reproducibility. Provides version control, collaborative editing, and issue tracking, enabling change tracking, contribution management, and community engagement.",
+    "link": "https://github.com/"
+  },
+  {
+    "id_name": "rstudio",
+    "full_name": "RStudio",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg",
+      "monitor.svg"
+    ],
+    "desc_short": "Integrated development environment for R and other programming languages, providing syntax highlighting, code completion, debugging, and project management. Includes tools for data visualization, reporting, and collaboration, enabling efficient and reproducible data analysis, modeling, and visualization.",
+    "link": "https://posit.co/download/rstudio-desktop/"
+  },
+  {
+    "id_name": "gitlab",
+    "full_name": "GitLab",
+    "lifecycle_step": [
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "infinity.svg",
+      "monitor.svg"
+    ],
+    "desc_short": "Open-source platform for managing and sharing code, data, and projects, providing tools for version control, collaboration, and continuous integration/continuous deployment (CI/CD). Includes Git version control, issue tracking, project management, and automated workflows, enabling change tracking, team collaboration, and automated testing and deployment.",
+    "link": "https://about.gitlab.com/"
+  },
+  {
+    "id_name": "cds",
+    "full_name": "Strasbourg astronomical Data Center (CDS)",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "telescope.svg",
+      "atom_structure.svg"
+    ],
+    "desc_short": "Domain repository dedicated to collection and worldwide distribution of astronomical data and related information.",
+    "link": "https://cdsweb.u-strasbg.fr/"
+  },
+  {
+    "id_name": "fdsn",
+    "full_name": "Federation of Digital Seismograph Networks (FDSN)",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "world.svg"
+    ],
+    "desc_short": "Domain repository for digital seismic waveform data in standardized format.",
+    "link": "https://www.fdsn.org/webservices/datacenters/"
+  },
+  {
+    "id_name": "sage",
+    "full_name": "NSF’s Seismological Facility for the Advancement of Geoscience (SAGE)",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "world.svg"
+    ],
+    "desc_short": "Distributed domain repository for archiving and sharing seismological data. Provides tools and infrastructure for collecting, managing, and analyzing seismic datasets, supporting improved data management and large-scale research workflows.",
+    "link": "https://ds.iris.edu/ds/"
+  },
+  {
+    "id_name": "gage",
+    "full_name": "NSF GAGE Facility",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "world.svg"
+    ],
+    "desc_short": "Domain repository providing access to geodetic data used to quantify motions of rock, ice, and water monitored by various sensors at or near the Earth’s surface. Archives and distributes GPS/GNSS, SAR, LiDAR/SfM, strain and seismic borehole, and tropospheric data.",
+    "link": "https://www.unavco.org/"
+  },
+  {
+    "id_name": "germ",
+    "full_name": "Geochemical Earth Reference Model (GERM)",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "world.svg"
+    ],
+    "desc_short": "Database and modeling framework providing a centralized platform for managing, integrating, and analyzing large geochemical and petrological datasets. Facilitates data sharing and intercomparison through a community-driven repository of geochemical data and models.",
+    "link": "https://earthref.org/GERM/#gsc.tab=0"
+  },
+  {
+    "id_name": "intermagnet",
+    "full_name": "International Real-time Magnetic Observatory Network",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "world.svg"
+    ],
+    "desc_short": "Global network of cooperating digital magnetic observatories using standardized measurement and recording equipment to facilitate data exchange and production of near‑real‑time geomagnetic products.",
+    "link": "https://intermagnet.org/"
+  },
+  {
+    "id_name": "epos",
+    "full_name": "European Plate Observing System (EPOS)",
+    "lifecycle_step": [
+      "storing_archiving",
+      "processing"
+    ],
+    "icon": [
+      "world.svg"
+    ],
+    "desc_short": "Collaborative framework bringing together geoscientists and engineers to provide open access to geophysical, geochemical, and geological data, along with visualization and modeling tools for the solid Earth.",
+    "link": "https://www.epos-eu.org/"
+  },
+  {
+    "id_name": "icos",
+    "full_name": "ICOS Carbon Portal",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "world.svg",
+      "dna.svg"
+    ],
+    "desc_short": "Portal providing long-term observations essential for understanding the current state and predicting future behavior of the global carbon cycle and greenhouse gas emissions.",
+    "link": "https://www.icos-cp.eu/"
+  },
+  {
+    "id_name": "esgf",
+    "full_name": "The Earth System Grid Federation (ESGF)",
+    "lifecycle_step": [
+      "organizing_collaborating",
+      "storing_archiving"
+    ],
+    "icon": [
+      "world.svg",
+      "dna.svg"
+    ],
+    "desc_short": "International collaboration platform for software supporting global climate change research. Manages a decentralized database with multiple petabytes of climate science data across federated sites, archiving Earth system models, global model simulations under the Coupled Model Intercomparison Project (CMIP), and paleoclimate simulations under the Paleoclimate Modelling Intercomparison Project (PMIP).",
+    "link": "https://aims2.llnl.gov/search"
+  },
+  {
+    "id_name": "pangea",
+    "full_name": "Pangea",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "world.svg"
+    ],
+    "desc_short": "Archive for paleoclimate, paleoenvironmental, and general environmental data. Provides services for archiving, publishing, and distributing georeferenced data from Earth system research.",
+    "link": "https://www.pangaea.de/"
+  },
+  {
+    "id_name": "ncei",
+    "full_name": "National Centers for Environmental Information",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "world.svg",
+      "dna.svg"
+    ],
+    "desc_short": "Center providing environmental data, products, and services spanning the ocean depths to the surface of the sun, supporting resilience, prosperity, and equity for current and future generations.",
+    "link": "https://www.ncei.noaa.gov/about-us"
+  },
+  {
+    "id_name": "cod",
+    "full_name": "Crystallography Open Database",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "atom_structure.svg"
+    ],
+    "desc_short": "Collection of crystal structures of organic, inorganic, metal-organic compounds and minerals, excluding biopolymers.",
+    "link": "https://www.crystallography.net/cod/"
+  },
+  {
+    "id_name": "riinfo",
+    "full_name": "RefractiveIndex.INFO",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "atom_structure.svg"
+    ],
+    "desc_short": "Repository focused on the dielectric functions of various materials.",
+    "link": "https://refractiveindex.info/"
+  },
+  {
+    "id_name": "nomad",
+    "full_name": "NOMAD: A distributed web-based platform for managing materials science research data",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing",
+      "processing"
+    ],
+    "icon": [
+      "atom_structure.svg"
+    ],
+    "desc_short": "Disciplinary repository for managing and sharing materials science data, enabling use by individual researchers, research groups, and the wider community.",
+    "link": "https://nomad-lab.eu/nomad-lab/"
+  },
+  {
+    "id_name": "mca",
+    "full_name": "Materials Cloud Archive",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "atom_structure.svg"
+    ],
+    "desc_short": "Disciplinary repository providing FAIR and long-term storage of computational materials science data, with emphasis on sharing full provenance of calculations.",
+    "link": "https://archive.materialscloud.org/"
+  },
+  {
+    "id_name": "hepdata",
+    "full_name": "The Durham High-Energy Physics Database (HEPData)",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "atom_structure.svg"
+    ],
+    "desc_short": "Open-access repository for scattering data from experimental particle physics. Comprises data points from plots and tables of several thousand publications, including results from the Large Hadron Collider (LHC).",
+    "link": "https://www.hepdata.net/"
+  },
+  {
+    "id_name": "cina",
+    "full_name": "The Computational Infrastructure for Nuclear Astrophysics (CINA)",
+    "lifecycle_step": [
+      "storing_archiving",
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "atom_structure.svg"
+    ],
+    "desc_short": "Cloud computing system enabling calculation of thermonuclear reaction rates from nuclear physics input and creation of customized rate libraries. Supports modification and visualization of rates, execution of element synthesis calculations, and sharing of work within an online community.",
+    "link": "https://nucastrodata.org/index.html"
+  },
+  {
+    "id_name": "vqeg",
+    "full_name": "The Video Quality Experts Group",
+    "lifecycle_step": [
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "monitor.svg"
+    ],
+    "desc_short": "Collection of websites containing video content, including test sequences, supporting research in video quality assessment. Facilitates investigation of new subjective and objective methods and validation of objective quality metrics for standardization purposes.",
+    "link": "https://vqeg.org/vqeg-home/"
+  },
+  {
+    "id_name": "cdvl",
+    "full_name": "Consumer Digital Video Library",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Digital video library for research and development in video processing and visual quality assessment. Provides video clips suitable for various video processing tasks and quality measurement applications.",
+    "link": "https://www.cdvl.org/"
+  },
+  {
+    "id_name": "rcsbpdb",
+    "full_name": "RCSB Protein Data Bank (RCSB PDB)",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "US node of the wwPDB: repository offering advanced search, visualization, and analysis tools with strong integration of structural data into sequence, functional, and biomedical contexts. It is widely used due to its powerful query options, interactive visualization features, and extensive links to external biological and chemical resources.",
+    "link": "https://www.rcsb.org/"
+  },
+  {
+    "id_name": "embd",
+    "full_name": "Electron Microscopy Data Bank (EMDB)",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Archive of 3D electron microscopy density maps and tomograms of macromolecular complexes, complementing atomic models in the PDB.",
+    "link": "https://www.ebi.ac.uk/emdb/"
+  },
+  {
+    "id_name": "bmrb",
+    "full_name": "Biological Magnetic Resonance Data Bank (BMRB)",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Repository of NMR spectroscopic data on proteins, peptides, nucleic acids, and metabolites, supporting studies of molecular structure and dynamics.",
+    "link": "https://bmrb.io/"
+  },
+  {
+    "id_name": "pdbe",
+    "full_name": "Protein Data Bank in Europe",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "European wwPDB partner: repository providing curated structural data enriched with biochemical, functional, and clinical annotations to support translational and healthcare-related research.",
+    "link": "https://www.ebi.ac.uk/"
+  },
+  {
+    "id_name": "pdbj",
+    "full_name": "Protein Data Bank Japan",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Japanese wwPDB resource: repository distinguished by specialized molecular visualization environments and interactive 3D tools for exploring structural data.",
+    "link": "https://pdbj.org/"
+  },
+  {
+    "id_name": "ccdc",
+    "full_name": "Cambridge Crystallographic Data Centre",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Key resource for small molecule crystallography data, structural chemistry data, software, and knowledge for materials and life sciences research.",
+    "link": "https://www.ccdc.cam.ac.uk/"
+  },
+  {
+    "id_name": "foldify",
+    "full_name": "Foldify via e-INFRA",
+    "lifecycle_step": [
+      "processing",
+      "analyzing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Web application based on Alphafold tools available after login via edu.id. AlphaFold 3 is the latest version of the AlphaFold protein structure prediction model. Foldify offers three different modes of submission for AlphaFold 3: Basic Submission, Advanced Submission, and JSON Submission.",
+    "link": "https://foldify.cloud.e-infra.cz/"
+  },
+  {
+    "id_name": "alphafold",
+    "full_name": "AlphaFold Protein Structure Database",
+    "lifecycle_step": [
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Resource of protein structure predictions generated by AlphaFold, covering nearly all known proteins and expanding structural knowledge beyond experimentally solved models.",
+    "link": "https://alphafold.ebi.ac.uk/"
+  },
+  {
+    "id_name": "uniprot",
+    "full_name": "UniProt (Universal Protein Resource)",
+    "lifecycle_step": [
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Comprehensive protein database providing curated and computationally predicted information on protein sequences, functional annotations, and post-translational modifications. Integrates data from multiple sources, supporting protein-centric research, functional analysis, and cross-references to genomics and structural resources.",
+    "link": "https://www.uniprot.org/"
+  },
+  {
+    "id_name": "arrayexpress",
+    "full_name": "ArrayExpress",
+    "lifecycle_step": [
+      "reusing",
+      "storing_archiving"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Repository of functional genomics experiments, including gene expression and other high-throughput datasets, providing curated and standardized data with metadata to support reuse, analysis, and integration across transcriptomics studies.",
+    "link": "https://www.ebi.ac.uk/biostudies/arrayexpress"
+  },
+  {
+    "id_name": "workflowhub",
+    "full_name": "WorkflowHub",
+    "lifecycle_step": [
+      "planning",
+      "processing",
+      "analyzing"
+    ],
+    "icon": [
+      "infinity.svg",
+      "monitor.svg",
+      "dna.svg"
+    ],
+    "desc_short": "Registry for describing, sharing, and publishing scientific computational workflows, facilitating discovery and reuse in an accessible and interoperable way.",
+    "link": "https://workflowhub.eu//"
+  },
+  {
+    "id_name": "biotools",
+    "full_name": "Bio.tools",
+    "lifecycle_step": [
+      "analyzing",
+      "processing",
+      "reusing"
+    ],
+    "icon": [
+      "monitor.svg",
+      "dna.svg"
+    ],
+    "desc_short": "Community-driven registry of bioinformatics software and data resources, providing detailed information on software tools, databases, analysis workflows, and services used in bioinformatics and life sciences.",
+    "link": "https://bio.tools/"
+  },
+  {
+    "id_name": "biocontainers",
+    "full_name": "BioContainers",
+    "lifecycle_step": [
+      "processing",
+      "analyzing"
+    ],
+    "icon": [
+      "monitor.svg",
+      "dna.svg"
+    ],
+    "desc_short": "Open-source project providing standardized containers for bioinformatics software, enabling reproducibility, portability, and easier integration of tools into workflows.",
+    "link": "https://biocontainers.pro/"
+  },
+  {
+    "id_name": "openebench",
+    "full_name": "OpenEBench",
+    "lifecycle_step": [
+      "planning",
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "dna.svg",
+      "monitor.svg"
+    ],
+    "desc_short": "Infrastructure for benchmarking bioinformatics tools and workflows, offering continuous assessment of software performance and interoperability.",
+    "link": "https://openebench.bsc.es/"
+  },
+  {
+    "id_name": "usegalaxyeu",
+    "full_name": "The European Galaxy server",
+    "lifecycle_step": [
+      "reusing",
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "monitor.svg",
+      "dna.svg"
+    ],
+    "desc_short": "Web-based environment offering thousands of bioinformatics and data-analysis tools. Provides temporary increased compute and storage quotas, as well as dedicated compute resources for trainers through the Training Infrastructure as a Service (TIaaS).",
+    "link": "https://usegalaxy.eu/"
+  },
+  {
+    "id_name": "proteomex",
+    "full_name": "ProteomeXchange",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Global consortium standardizing submission and dissemination of proteomics data across partner repositories, ensuring consistent metadata and broad accessibility.",
+    "link": "http://www.proteomexchange.org/"
+  },
+  {
+    "id_name": "pride",
+    "full_name": "PRIDE Archive",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Major repository within ProteomeXchange for mass spectrometry–based proteomics, supporting the sharing of raw data, results, and reanalyses.",
+    "link": "https://www.ebi.ac.uk/pride/archive/"
+  },
+  {
+    "id_name": "iochembd",
+    "full_name": "ioChem-BD",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg",
+      "monitor.svg"
+    ],
+    "desc_short": "Network of repositories for open-access computational chemistry research results, providing standardized metadata and supporting data reuse, integration, and reproducible computational workflows.",
+    "link": "https://www.iochem-bd.org/"
+  },
+  {
+    "id_name": "chemspider",
+    "full_name": "ChemSpider",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Free chemical structure database providing fast text and structure search access to over 67 million structures from hundreds of data sources.",
+    "link": "https://www.chemspider.com/"
+  },
+  {
+    "id_name": "bioimagearchive",
+    "full_name": "The BioImage Archive",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Repository storing and distributing biological images, accepting submissions from any imaging modality if associated with a peer-reviewed publication or of value beyond a single experiment.",
+    "link": "https://www.ebi.ac.uk/bioimage-archive/submit/"
+  },
+  {
+    "id_name": "idr",
+    "full_name": "Image Data Resource (IDR)",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Repository publishing ‘reference image’ datasets supporting peer-reviewed publications and integrating them with other imaging datasets for cross-dataset querying of metadata (e.g., genes, phenotypes, small molecules) and re-analysis.",
+    "link": "https://idr.openmicroscopy.org/about/submission.html"
+  },
+  {
+    "id_name": "ncbi",
+    "full_name": "National Center for Biotechnology Information",
+    "lifecycle_step": [
+      "storing_archiving",
+      "analyzing",
+      "reusing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Federal resource center providing access to a broad range of biological databases and analysis tools, including nucleotide and protein sequences, gene expression datasets, chemical and bioactivity data, and sequence similarity searches. Integrates data across resources with search and analysis platforms, supporting cross-database exploration, data retrieval, and large-scale biological studies.",
+    "link": "https://www.ncbi.nlm.nih.gov/"
+  },
+  {
+    "id_name": "zenodo",
+    "full_name": "Zenodo",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Domain-neutral, general-purpose repository allowing deposit of a wide range of research outputs, including data, papers, and software.",
+    "link": "https://zenodo.org/"
+  },
+  {
+    "id_name": "dryad",
+    "full_name": "Dryad",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Domain neutral repository specifically designed for depositing data associated with academic publications.",
+    "link": "https://datadryad.org/"
+  },
+  {
+    "id_name": "owncloud",
+    "full_name": "Owncloud via CESNET",
+    "lifecycle_step": [
+      "organizing_collaborating",
+      "sharing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Cloud storage service maintained by Cesnet.cz, suitable for storing smaller amounts of files with web access, file synchronization across devices, and sharing with colleagues. Supports sharing of contacts and calendars through ownCloud.",
+    "link": "https://owncloud.cesnet.cz/"
+  },
+  {
+    "id_name": "qualidatanet",
+    "full_name": "QualidataNet",
+    "lifecycle_step": [
+      "organizing_collaborating",
+      "reusing",
+      "sharing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Platform for qualitative research data, enabling search, collection, use, and archiving. Central point of entry supporting research data management throughout the entire data lifecycle, providing information and practical recommendations from research data centers for each phase.",
+    "link": "https://www.qualidatanet.com/en/"
+  },
+  {
+    "id_name": "cericeric",
+    "full_name": "CERIC – Labs and Instruments",
+    "lifecycle_step": [
+      "collecting",
+      "analyzing"
+    ],
+    "icon": [
+      "atom_structure.svg",
+      "dna.svg",
+      "world.svg"
+    ],
+    "desc_short": "European Research Infrastructure Consortium providing open access to advanced analytical facilities across Europe for materials, biomaterials, and nanotechnology research, with a focus on energy materials and life sciences. Offers a single entry point to leading national research infrastructures for researchers worldwide, free of charge for non-proprietary research.",
+    "link": "https://www.ceric-eric.eu/users/labs-and-instruments/"
+  },
+  {
+    "id_name": "elan",
+    "full_name": "ELAN",
+    "lifecycle_step": [
+      "processing",
+      "analyzing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Free, open-source software for annotating and analyzing multimedia data, including transcription of audio and video files. Available for Windows, Mac, and Linux.",
+    "link": "https://tla.mpi.nl/tools/tla-tools/elan/"
+  },
+  {
+    "id_name": "exmeralda",
+    "full_name": "EXMARaLDA",
+    "lifecycle_step": [
+      "processing",
+      "analyzing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "System for computer-aided work with primarily oral corpora, including a transcription and annotation editor (Partitur-Editor), a corpus management tool (Corpus Manager), and a search and analysis tool (EXAKT). Also incorporates FOLKER and OrthoNormal tools developed for the FOLK project.",
+    "link": "https://exmaralda.org/en/"
+  },
+  {
+    "id_name": "maxqda",
+    "full_name": "MaxQDA",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Proprietary software supporting transcription of audio and video data, including automatic transcription, time stamping, notes, and tagging. Provides a range of analysis and visualization tools for qualitative data analysis.",
+    "link": "https://www.maxqda.com"
+  },
+  {
+    "id_name": "qualianon",
+    "full_name": "QualiAnon",
+    "lifecycle_step": [
+      "processing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Tool supporting anonymization of text data, developed by the Qualiservice research data center for qualitative social science interviews. Semi-automated replacement of sensitive information with user-defined levels of abstraction, allowing pseudonymization or anonymization, with options for standardized lists and case- or study-specific replacements.",
+    "link": "https://github.com/pangaea-data-publisher/qualianon"
+  },
+  {
+    "id_name": "aquarius",
+    "full_name": "AQUARIUS",
+    "lifecycle_step": [
+      "collecting",
+      "processing"
+    ],
+    "icon": [
+      "dna.svg"
+    ],
+    "desc_short": "Project providing access to a comprehensive suite of integrated research infrastructures to address challenges and explore opportunities for long-term sustainability of marine and freshwater ecosystems.",
+    "link": "https://aquarius-ri.eu/research-infrastructures-catalogue/"
+  },
+  {
+    "id_name": "asep",
+    "full_name": "ASEP – CAS Institutional Repository",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Institutional repository storing bibliographic records of all results produced at the Czech Academy of Sciences, including full texts and associated files. Supports storage of research data files with metadata or metadata-only records linking to external repositories.",
+    "link": "https://asep-portal.lib.cas.cz/"
+  },
+  {
+    "id_name": "s3storage",
+    "full_name": "S3 storage via CESNET",
+    "lifecycle_step": [
+      "storing_archiving",
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Service maintained by CESNET as part of ‘Data Storage Services’, providing a catch-all virtual organization (VO S3) for storage users with standard needs. Membership is free for researchers and students of Czech academic institutions that are members of the CESNET association.",
+    "link": "https://du.cesnet.cz/en/navody/object_storage/osobni_s3/start"
+  },
+  {
+    "id_name": "filesyncandshare",
+    "full_name": "File Sync and Share via EU Node",
+    "lifecycle_step": [
+      "organizing_collaborating",
+      "sharing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Service enabling researchers to synchronize and share files across multiple locations using a European node as a central hub. Cloud-based platform uploads files to a central server, which then synchronizes them across all connected devices.",
+    "link": "https://open-science-cloud.ec.europa.eu/services/file-sync-share"
+  },
+  {
+    "id_name": "virtualorganization",
+    "full_name": "Virtual organization via CESNET",
+    "lifecycle_step": [
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Service primarily supporting a group of members participating in a research project or belonging to a single organization. Enables data sharing within the group, managed by a VO administrator, and requires an eduID.cz account, though access can be extended to external users via myID, Google, Facebook, LinkedIn, ORCID, or GitHub if approved by the VO manager.",
+    "link": "https://du.cesnet.cz/en/navody/perun/zalozeni_skupiny/start"
+  },
+  {
+    "id_name": "eduroam",
+    "full_name": "Eduroam",
+    "lifecycle_step": [
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Service providing IP mobility and roaming within the Czech NREN, enabling users of interconnected networks to connect easily and transparently.",
+    "link": "http://eduroam.cz"
+  },
+  {
+    "id_name": "eduid",
+    "full_name": "eduID",
+    "lifecycle_step": [
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Czech academic identity federation operated by CESNET, providing inter-organizational identity management and access control to network services.",
+    "link": "http://eduID.cz"
+  },
+  {
+    "id_name": "pools",
+    "full_name": "Pools via e-INFRA CZ",
+    "lifecycle_step": [
+      "organizing_collaborating",
+      "planning"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Scheduling platform powered by Rallly, an open-source tool for coordinating meeting times across groups. Enables participants to find the best meeting time by voting on date and time options.",
+    "link": "https://polls.e-infra.cz"
+  },
+  {
+    "id_name": "decidequestionaire",
+    "full_name": "Decide Questionaire",
+    "lifecycle_step": [
+      "planning",
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Service for scheduling or creating surveys with unlimited participants, with a strong focus on data privacy. Polls are encrypted directly in the web browser and visible only to recipients of the poll link. Powered by nolog via Croodle free software.",
+    "link": "https://decide.nolog.cz/"
+  },
+  {
+    "id_name": "usergroupseunode",
+    "full_name": "User groups via EU Node",
+    "lifecycle_step": [
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Platform facilitating collaborative work by sharing access to EOSC EU Node resources.",
+    "link": "https://open-science-cloud.ec.europa.eu/dashboard/home"
+  },
+  {
+    "id_name": "bulkdatatransfer",
+    "full_name": "Bulk Data Transfer via EU Node",
+    "lifecycle_step": [
+      "reusing",
+      "sharing",
+      "processing"
+    ],
+    "icon": [
+      "world.svg"
+    ],
+    "desc_short": "Extension of compute services providing data transfer mechanisms for handling stage-in and stage-out of massive (TB–PB) datasets to and from compute infrastructure back-ends. Supports R&D project participants in storing data directly into Virtual Machine Service and Container Platform storage back-ends (FTS3, GridFTP, FTS REST API).",
+    "link": "https://docs.psnc.pl/display/EOSCUserGuides/Bulk+Data+Transfer"
+  },
+  {
+    "id_name": "kubernetescerit",
+    "full_name": "Kubernetes Container Platform via CERIT-SC",
+    "lifecycle_step": [
+      "processing",
+      "analyzing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Container platform built on Kubernetes and utilizing Docker images, enabling users to focus on applications with minimal infrastructure knowledge. Supports both pre-built applications and user-created Docker images, simplifying deployment and management.",
+    "link": "https://docs.cerit.io/en/docs/platform/overview"
+  },
+  {
+    "id_name": "openstackcloud",
+    "full_name": "OpenStack Cloud via e-INFRA CZ",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Cloud infrastructure consisting of three instances (G1 Brno, G2 Brno, G2 Ostrava) and 17 computational clusters with 277 hypervisors, 8,968 cores, 96 GPU cards, and 178 TB RAM across Brno and Ostrava. Supports special-demand applications using local SSDs and GPU cards.",
+    "link": "https://docs.platforms.cloud.e-infra.cz/en/docs"
+  },
+  {
+    "id_name": "rstudioserver",
+    "full_name": "RStudio Server via Metacentrum",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Web-based integrated development environment for running R and its packages through a browser, without local installation. Provides a shared, centrally managed compute environment with scalable CPU/RAM, secure authentication, and persistent storage, supporting collaborative development of reproducible R scripts and applications. Primarily used for data exploration, statistical modeling, machine-learning workflows, and interactive visualizations.",
+    "link": "https://ondemand.metacentrum.cz/pun/sys/dashboard/batch_connect/sys/bc_meta_rstudio/session_contexts/new"
+  },
+  {
+    "id_name": "matlabwebapp",
+    "full_name": "Matlab Webapp via Metacentrum",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Hosted, browser-accessible instance of MATLAB for developing, running, and sharing interactive apps without local installation. Provides a managed compute environment with GPU/CPU resources, secure authentication, and persistent storage, supporting execution of data-analysis pipelines, simulations, and custom graphical interfaces from any device.",
+    "link": "https://ondemand.metacentrum.cz/pun/sys/dashboard/batch_connect/sys/bc_desktop-matlab/matlab/session_contexts/new"
+  },
+  {
+    "id_name": "jupyternotebookmetacentrum",
+    "full_name": "Jupyter Notebook via Metacentrum",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Cloud-hosted, browser-based environment for creating and running interactive notebooks with live code (Python, R, Julia, etc.), rich text, visualizations, and data files without local installation. Provides scalable CPU/GPU resources, persistent storage, and integrated authentication. Primarily used for exploratory data science, algorithm prototyping, and collaborative research, keeping code, results, and documentation together in a single, shareable document.",
+    "link": "https://ondemand.metacentrum.cz/pun/sys/dashboard/batch_connect/sys/bc_meta_jupyter/session_contexts/new"
+  },
+  {
+    "id_name": "lumi",
+    "full_name": "LUMI via IT4Innovation",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "European High-Performance Computing Joint Undertaking (EuroHPC JU) pooling European resources to develop top-range exascale supercomputers for big data processing, based on competitive European technology.",
+    "link": "https://docs.it4i.cz/lumi/about/"
+  },
+  {
+    "id_name": "virtualmachines",
+    "full_name": "Virtual machines via EU Node",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Virtual Machines service offering customizable CPU, memory, and storage resources across two OpenStack sites, allowing creation of VMs via pre-configured templates or fully custom setups. Supports high-performance computing, secure data storage, network isolation, and multi-user collaboration.",
+    "link": "https://docs.psnc.pl/display/EOSCUserGuides/Virtual+Machines"
+  },
+  {
+    "id_name": "cloudcontainer",
+    "full_name": "The Cloud Container Platform via EU Node",
+    "lifecycle_step": [
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Service built on OKD and Kubernetes providing a robust environment for deploying and managing containerized applications. Supports Docker and OCI-compliant containers with automated load balancing, service discovery, and pod scaling. Offers dynamic storage provisioning and seamless integration with CI/CD pipelines to enhance development workflows.",
+    "link": "https://docs.psnc.pl/display/EOSCUserGuides/Cloud+Container+Platform"
+  },
+  {
+    "id_name": "mol",
+    "full_name": "Mol* (/'molstar/)",
+    "lifecycle_step": [
+      "analyzing",
+      "sharing",
+      "processing"
+    ],
+    "icon": [
+      "dna.svg",
+      "atom_structure.svg"
+    ],
+    "desc_short": "Open-source, web-based viewer for macromolecular structures, supporting PDB, mmCIF, and related file formats directly in a browser. Combines high-performance WebGL rendering with analysis tools such as ligand density fitting, secondary-structure annotation, and interactive measurements, enabling real-time exploration of proteins, nucleic acids, and complex assemblies.",
+    "link": "https://molstar.org/"
+  },
+  {
+    "id_name": "openrefine",
+    "full_name": "OpenRefine via EU Node Tool Hub",
+    "lifecycle_step": [
+      "processing"
+    ],
+    "icon": [
+      "user.svg",
+      "world.svg"
+    ],
+    "desc_short": "Free, open-source application accessed via browser (via EU Node platform without installation) for cleaning, transforming, and enriching \"messy\" tabular data (CSV, Excel, JSON). Features include faceting, clustering, bulk transformations, and history tracking to ensure reproducibility",
+    "link": "https://open-science-cloud.ec.europa.eu/dashboard/tools-hub"
+  },
+  {
+    "id_name": "chatai",
+    "full_name": "Chat AI via e-INFRA",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Platform for accessing and testing various large language models (LLMs) hosted on e-INFRA servers. Available models include LLaMA 3.3 (Meta), DeepSeek R1, Qwen 2.5 Coder, Gemma 3, Command-A, and Aya Expanse, supporting a wide range of natural language processing tasks.",
+    "link": "https://chat.ai.e-infra.cz/"
+  },
+  {
+    "id_name": "zotero",
+    "full_name": "Zotero",
+    "lifecycle_step": [
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Free, open-source citation management tool for collecting, organizing, and citing sources, as well as creating bibliographies. Supports saving citations and full-text PDFs, organizing them into collections and libraries, and integrating with word processors for easy citation insertion and formatting. Collaborative libraries enable multiple users to annotate, tag, and manage items together.",
+    "link": "https://www.zotero.org/"
+  },
+  {
+    "id_name": "openepi",
+    "full_name": "OpenEpi",
+    "lifecycle_step": [
+      "analyzing"
+    ],
+    "icon": [
+      "dna.svg",
+      "user.svg"
+    ],
+    "desc_short": "Free, open-source software for epidemiologic statistics, runnable from a web server or locally without a server. Provides descriptive and analytic statistics for counts and measurements, stratified analysis with exact confidence limits, matched-pair and person-time analysis, sample size and power calculations, random numbers, sensitivity and specificity, R × C tables, chi-square for dose-response, and links to additional resources.",
+    "link": "https://www.openepi.com"
+  },
+  {
+    "id_name": "dataplot",
+    "full_name": "Dataplot",
+    "lifecycle_step": [
+      "analyzing",
+      "sharing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Free, public-domain, multi-platform software system for scientific visualization, statistical analysis, and non-linear modeling.",
+    "link": "https://www.itl.nist.gov/div898/software/dataplot/homepage.htm"
+  },
+  {
+    "id_name": "collectica",
+    "full_name": "Colectica",
+    "lifecycle_step": [
+      "organizing_collaborating",
+      "planning",
+      "collecting",
+      "sharing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Software platform supporting the full lifecycle of statistical data and survey research, enabling creation, documentation, and publication of study metadata using open standards such as DDI, ISO/IEC 11179, and SDMX. Offers a suite of tools – Designer, Questionnaires, Reader, Repository, and Portal – facilitating survey design, metadata management, version control, and online dissemination of richly annotated data, ensuring research data is well-documented, interoperable, and reusable.",
+    "link": "https://www.colectica.com/"
+  },
+  {
+    "id_name": "irods",
+    "full_name": "iRODS (Integrated Rule-Oriented Data System)",
+    "lifecycle_step": [
+      "organizing_collaborating",
+      "planning",
+      "sharing",
+      "reusing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Open-source data management software used by research, commercial, and governmental organizations worldwide. Provides a production-level distribution for deployment in mission-critical environments, virtualizing data storage resources so users can manage their data regardless of location or device.",
+    "link": "https://irods.org/"
+  },
+  {
+    "id_name": "apertus",
+    "full_name": "Apertus – open LLM",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "AI model developed by the Swiss AI Initiative, trained on a massive dataset and deployed via the Public AI Inference Utility. Supports researchers with multilingual capabilities and general knowledge, focusing on accuracy and transparency, and providing clear explanations for query results where possible.",
+    "link": "https://publicai.co/"
+  },
+  {
+    "id_name": "figshare",
+    "full_name": "Figshare",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Online, multidisciplinary repository for uploading, preserving, and publicly sharing research outputs (datasets, figures, posters, preprints, code, etc.), with automatic DOI assignment and ORCID integration for citation and credit. Offers extensive file-type support, granular licensing options, integrated usage metrics, and optional institution-hosted instances, providing a customizable and analytics-rich environment beyond generic archival platforms.",
+    "link": "https://figshare.com/"
+  },
+  {
+    "id_name": "dmponline",
+    "full_name": "DMPOnline",
+    "lifecycle_step": [
+      "planning"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Web-based service provided by the British Digital Curation Centre to assist researchers in drafting data-management plans. Offers pre-populated, funder- and institution-specific templates, form-driven guidance, basic collaborative editing with version control, and export to PDF or Word. Distinguished by ready-made policy templates and a straightforward checklist-style workflow, compared with more modular platforms offering scenario-based decision trees.",
+    "link": "https://dmponline.dcc.ac.uk/"
+  },
+  {
+    "id_name": "argos",
+    "full_name": "Agros",
+    "lifecycle_step": [
+      "planning"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Data-management-plan platform provided by OpenAIRE, offering institution- and funder-specific templates, automated compliance checks, and direct links to repository submission workflows (Zenodo). Supports multiple contributors editing and tracking changes in real time.",
+    "link": "https://argos.openaire.eu/splash/"
+  },
+  {
+    "id_name": "rdmo",
+    "full_name": "Research Data Management Organiser",
+    "lifecycle_step": [
+      "planning"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Data-management-plan platform widely used in Germany, providing institution- and funder-specific templates.",
+    "link": "https://rdmorganiser.github.io/en/"
+  },
+  {
+    "id_name": "gitlfs",
+    "full_name": "Git Large File Storage",
+    "lifecycle_step": [
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Extension to Git that replaces heavyweight files (e.g., database dumps, binary archives, large CSVs) with lightweight pointer objects, storing actual contents on a dedicated LFS server or cloud storage. Enables version control of database snapshots, sharing of reproducible data extracts, and keeping the codebase lightweight for seamless collaboration and automated retrieval of exact data versions in analysis pipelines.",
+    "link": "https://git-lfs.com/"
+  },
+  {
+    "id_name": null,
+    "full_name": "Software Heritage",
+    "lifecycle_step": [],
+    "icon": [],
+    "desc_short": null,
+    "link": "https://www.softwareheritage.org/"
+  },
+  {
+    "id_name": null,
+    "full_name": "PyTorch",
+    "lifecycle_step": [],
+    "icon": [],
+    "desc_short": null,
+    "link": "https://pytorch.org/"
+  },
+  {
+    "id_name": null,
+    "full_name": "ImageNet",
+    "lifecycle_step": [],
+    "icon": [],
+    "desc_short": "ImageNet is an image database organized according to the WordNet hierarchy (currently only the nouns), in which each node of the hierarchy is depicted by hundreds and thousands of images. The project has been instrumental in advancing computer vision and deep learning research. The data is available for free to researchers for non-commercial use.",
+    "link": "https://www.image-net.org/"
+  },
+  {
+    "id_name": null,
+    "full_name": "nodegoat",
+    "lifecycle_step": [],
+    "icon": [],
+    "desc_short": null,
+    "link": null
+  },
+  {
+    "id_name": null,
+    "full_name": "REDCap",
+    "lifecycle_step": [],
+    "icon": [],
+    "desc_short": null,
+    "link": null
+  }
+]
