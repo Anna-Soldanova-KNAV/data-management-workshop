@@ -105,6 +105,22 @@ document.addEventListener("DOMContentLoaded", () => {
             : "No description available.";
           infoBox.appendChild(desc);
 
+          // Link
+          if (tool.link) {
+            const linkWrapper = document.createElement("p");
+            linkWrapper.classList.add("tool-link");
+
+            const link = document.createElement("a");
+            link.href = tool.link;
+            link.textContent = "Website ↗";
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+
+            linkWrapper.appendChild(link);
+            infoBox.appendChild(linkWrapper);
+          }
+
+
           // Přidání info boxu do <li>
           li.appendChild(infoBox);
 
