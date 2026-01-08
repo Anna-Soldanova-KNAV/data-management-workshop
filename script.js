@@ -98,12 +98,16 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
 
-          // Popis nástroje
+          // Kontejner pro text (popis + link)
+          const textGroup = document.createElement("div");
+          textGroup.classList.add("tool-text-group");
+
+          // Popis
           const desc = document.createElement("p");
           desc.textContent = tool.desc_short
             ? tool.desc_short.replace(/^"+|"+$/g, '')
             : "No description available.";
-          infoBox.appendChild(desc);
+          textGroup.appendChild(desc);
 
           // Link
           if (tool.link) {
@@ -117,8 +121,12 @@ document.addEventListener("DOMContentLoaded", () => {
             link.rel = "noopener noreferrer";
 
             linkWrapper.appendChild(link);
-            infoBox.appendChild(linkWrapper);
+            textGroup.appendChild(linkWrapper);
           }
+
+          // Přidání textového bloku do infoBoxu
+          infoBox.appendChild(textGroup);
+
 
 
           // Přidání info boxu do <li>
