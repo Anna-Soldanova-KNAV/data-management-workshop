@@ -80,6 +80,14 @@ body {
   color: #FF7A01;
 }
 
+.tool-link a {
+  font-weight: 400;
+  transition: font-weight 0.15s ease-in-out;
+}
+
+.tool-link a:hover {
+  font-weight: 600;
+}
 
 
 .tool-item:hover span {
