@@ -1,4 +1,6 @@
 let toolsData = [];
+let activeIconFilters = new Set(); // Doménový filtr podle ikon
+
 
 fetch('dmtools.json')
   .then(response => response.json())
@@ -18,6 +20,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const stepTitle = document.getElementById("step-title");
   const stepDescription = document.getElementById("step-description");
   const toolsList = document.getElementById("tools-list");
+  const iconFilters = document.querySelectorAll(".icon-filter");
+
+  iconFilters.forEach(icon => {
+    icon.addEventListener("click", () => {
+      const iconName = icon.dataset.icon;
+
+      // infinity.svg nefiltruje
+      if (icon.classList.contains("always-active")) {
+        return;
+      }
+
+      if (activeIconFilters.has(iconName)) {
+        activeIconFilters.delete(iconName);
+        icon.classList.remove("active");
+      } else {
+        activeIconFilters.add(iconName);
+        icon.classList.add("active");
+      }
+
+      // znovu vykreslit seznam – použijeme aktivní krok
+      const activeStep = document.querySelector(".step.active");
+      if (activeStep) {
+        activeStep.click();
+      }
+    });
+  });
+
 
   steps.forEach(step => {
     step.addEventListener("click", () => {
@@ -34,6 +63,17 @@ document.addEventListener("DOMContentLoaded", () => {
       toolsList.innerHTML = "";
 
       const filteredTools = toolsData
+        .filter(tool => {
+          // žádný ikonový filtr → zobraz vše
+          if (activeIconFilters.size === 0) return true;
+
+          if (!tool.icon) return false;
+
+          const icons = Array.isArray(tool.icon) ? tool.icon : [tool.icon];
+
+          // OR logika – stačí jedna shoda
+          return icons.some(icon => activeIconFilters.has(icon));
+        })
         .filter(tool =>
           tool.lifecycle_step.some(s => s.trim() === stepKey)
         )
