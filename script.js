@@ -26,14 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
     icon.addEventListener("click", () => {
       const iconName = icon.dataset.icon;
 
-      // infinity.svg = reset filtru
       if (icon.classList.contains("always-active")) {
+        // reset filtru
         activeIconFilter = null;
         document.querySelectorAll(".icon-filter.active")
           .forEach(i => i.classList.remove("active"));
-      }
-
-      if (activeIconFilter === iconName) {
+      } else if (activeIconFilter === iconName) {
         // kliknutí na stejnou → vypne filtr
         activeIconFilter = null;
         icon.classList.remove("active");
@@ -44,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         activeIconFilter = iconName;
         icon.classList.add("active");
       }
+
 
       const activeStep = document.querySelector(".step.active");
         if (activeStep) {
