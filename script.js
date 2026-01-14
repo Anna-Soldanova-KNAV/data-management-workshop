@@ -1,5 +1,5 @@
 let toolsData = [];
-let activeIconFilters = new Set(); // Doménový filtr podle ikon
+let activeIconFilters = null; // Doménový filtr podle ikon
 
 
 fetch('dmtools.json')
@@ -26,26 +26,54 @@ document.addEventListener("DOMContentLoaded", () => {
     icon.addEventListener("click", () => {
       const iconName = icon.dataset.icon;
 
-      // infinity.svg nefiltruje
+      // infinity.svg = reset filtru
       if (icon.classList.contains("always-active")) {
+        activeIconFilter = null;
+        document.querySelectorAll(".icon-filter.active")
+          .forEach(i => i.classList.remove("active"));
         return;
       }
 
-      if (activeIconFilters.has(iconName)) {
-        activeIconFilters.delete(iconName);
+      if (activeIconFilter === iconName) {
+        // kliknutí na stejnou → vypne filtr
+        activeIconFilter = null;
         icon.classList.remove("active");
       } else {
-        activeIconFilters.add(iconName);
+        // kliknutí na jinou → předchozí vypnout
+        document.querySelectorAll(".icon-filter.active")
+          .forEach(i => i.classList.remove("active"));
+        activeIconFilter = iconName;
         icon.classList.add("active");
       }
 
-      // znovu vykreslit seznam – použijeme aktivní krok
-      const activeStep = document.querySelector(".step.active");
-      if (activeStep) {
-        activeStep.click();
+      // Po kliknutí na ikonový filtr se **nic nevykreslí**, čeká se na klik krok
+    });
+
+    // tooltip při hoveru
+    icon.addEventListener("mouseenter", () => {
+      const tooltip = icon.dataset.tooltip;
+      if (!tooltip) return;
+      const tipEl = document.createElement("div");
+      tipEl.className = "icon-tooltip";
+      tipEl.textContent = tooltip;
+      document.body.appendChild(tipEl);
+
+      const rect = icon.getBoundingClientRect();
+      tipEl.style.position = "absolute";
+      tipEl.style.top = `${rect.bottom + 4}px`;
+      tipEl.style.left = `${rect.left}px`;
+
+      icon._tooltipEl = tipEl;
+    });
+
+    icon.addEventListener("mouseleave", () => {
+      if (icon._tooltipEl) {
+        icon._tooltipEl.remove();
+        icon._tooltipEl = null;
       }
     });
   });
+
 
 
   steps.forEach(step => {
