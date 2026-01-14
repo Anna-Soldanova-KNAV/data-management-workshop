@@ -250,7 +250,7 @@ body {
 
 #tools-list {
   overflow-y: auto;  /* scroll uvnitř seznamu */
-  max-height: calc(100vh - 463px); /* omezení výšky seznamu, upravit podle celkové max výšky okna */
+  max-height: calc(100vh - 515px); /* omezení výšky seznamu, upravit podle celkové max výšky okna */
 }  
 
 .tools-box ul {
