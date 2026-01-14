@@ -46,7 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
         icon.classList.add("active");
       }
 
-      // Po kliknutí na ikonový filtr se **nic nevykreslí**, čeká se na klik krok
+      const activeStep = document.querySelector(".step.active");
+        if (activeStep) {
+          activeStep.click(); // zavolá filtr + render
+      }
     });
 
     // tooltip při hoveru
