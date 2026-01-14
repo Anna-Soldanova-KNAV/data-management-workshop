@@ -18,6 +18,13 @@ body {
   flex-direction: column;
 }
 
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
 .main-title {
   font-size: 3rem;
   color: #002E59;
