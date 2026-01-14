@@ -44,6 +44,22 @@ body {
   transform: scaleX(-1); /* zrcadlově otočí obrázek horizontálně */
 }
 
+.icon-filter {
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.icon-filter.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.icon-filter.always-active {
+  opacity: 1;
+  cursor: default;
+}
+
 .add-your-tool {
   color: #002E59;
   text-align: center;
