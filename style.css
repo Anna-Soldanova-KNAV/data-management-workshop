@@ -57,11 +57,12 @@ body {
 #icon-filter {
   display: flex;
   gap: 12px;
-  align-items: center;
+  align-items: center;       /* vertikální zarovnání ikon */
+  justify-content: center;   /* horizontálně vycentrované */
   margin-bottom: 1rem;
-  margin-left: auto;
-  justify-content: center;
+  margin-left: 0;          
 }
+
 
 .icon-filter.active {
   opacity: 1;
