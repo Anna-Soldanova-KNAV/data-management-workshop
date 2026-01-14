@@ -100,6 +100,9 @@ document.addEventListener("DOMContentLoaded", () => {
           if (!activeIconFilter) return true; // žádný ikonový filtr → vše
           if (!tool.icon) return false;
           const icons = Array.isArray(tool.icon) ? tool.icon : [tool.icon];
+           // pokud tool má infinity.svg, vždy ho zobraz
+          if (icons.includes("infinity.svg")) return true;
+           // jinak filtruj podle vybraného ikonového filtru
           return icons.includes(activeIconFilter);
         })
         .sort((a, b) => {
