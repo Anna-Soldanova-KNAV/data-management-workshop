@@ -71,6 +71,18 @@ body {
   cursor: default;
 }
 
+.icon-tooltip {
+  background: #f0f0f0;
+  color: #002E59;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+
 .add-your-tool {
   color: #002E59;
   text-align: center;
