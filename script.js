@@ -1,5 +1,5 @@
 let toolsData = [];
-let activeIconFilters = null; // Doménový filtr podle ikon
+let activeIconFilter = null; // Doménový filtr podle ikon
 
 
 fetch('dmtools.json')
@@ -91,25 +91,21 @@ document.addEventListener("DOMContentLoaded", () => {
       toolsList.innerHTML = "";
 
       const filteredTools = toolsData
-        .filter(tool => {
-          // žádný ikonový filtr → zobraz vše
-          if (activeIconFilters.size === 0) return true;
-
-          if (!tool.icon) return false;
-
-          const icons = Array.isArray(tool.icon) ? tool.icon : [tool.icon];
-
-          // OR logika – stačí jedna shoda
-          return icons.some(icon => activeIconFilters.has(icon));
-        })
-        .filter(tool =>
+        .filter(tool => 
           tool.lifecycle_step.some(s => s.trim() === stepKey)
         )
+        .filter(tool => {
+          if (!activeIconFilter) return true; // žádný ikonový filtr → vše
+          if (!tool.icon) return false;
+          const icons = Array.isArray(tool.icon) ? tool.icon : [tool.icon];
+          return icons.includes(activeIconFilter);
+        })
         .sort((a, b) => {
           const nameA = (a.full_name || a.id_name || "Unnamed tool").toLowerCase();
           const nameB = (b.full_name || b.id_name || "Unnamed tool").toLowerCase();
           return nameA.localeCompare(nameB);
         });
+
 
       if (filteredTools.length === 0) {
         toolsList.innerHTML = "<li>No tools available for this step.</li>";
