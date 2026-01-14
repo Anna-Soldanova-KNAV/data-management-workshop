@@ -45,9 +45,20 @@ body {
 }
 
 .icon-filter {
+  width: 36px;      
+  height: 36px;
+  object-fit: contain;
+  
   cursor: pointer;
   opacity: 0.4;
   transition: opacity 0.2s, transform 0.2s;
+}
+
+#icon-filter {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .icon-filter.active {
