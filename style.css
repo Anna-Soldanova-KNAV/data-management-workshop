@@ -241,6 +241,10 @@ body {
   height: 150px;
 }
 
+.tools-box {
+ max-height: calc(100vh - 400px);
+}
+
 .tools-box h2 {
   position: sticky;
   top: 0;
@@ -249,7 +253,6 @@ body {
 } 
 
 #tools-list {
-  max-height: calc(100vh - 463px); /* omezení výšky seznamu, upravit podle celkové max výšky okna */
   overflow-y: auto;  /* scroll uvnitř seznamu */
 }  
 
