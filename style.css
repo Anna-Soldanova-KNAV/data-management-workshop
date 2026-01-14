@@ -9,7 +9,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
   color: #002E59;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   overflow: hidden; /* zakáže scrollování */
@@ -26,7 +26,7 @@ body {
 
 
 .main-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #002E59;
   text-align: center;
   padding: 20px 0 10px;
@@ -326,13 +326,13 @@ h2 {
 
 .contact-box h4 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .contact-box a {
   margin: 0;
   line-height: 1.0;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: #002E59;
 }
 
@@ -364,7 +364,7 @@ h2 {
 
 .add-your-tool-box a {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #002E59;
 }
 
