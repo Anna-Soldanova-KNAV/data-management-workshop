@@ -174,7 +174,8 @@ body {
   flex-shrink: 0;
   cursor: default;
   margin: 0 auto;          /* horizontálně vycentrované v containeru */
-  transform: translate(80px, -40px); /* posun vůči středové pozici */
+  transform: translate(80px, -40px) scale(0.9);
+  transform-origin: center; /* posun vůči středové pozici */
 }
 
 .step {
