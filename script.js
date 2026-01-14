@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
         activeIconFilter = null;
         document.querySelectorAll(".icon-filter.active")
           .forEach(i => i.classList.remove("active"));
-        return;
       }
 
       if (activeIconFilter === iconName) {
