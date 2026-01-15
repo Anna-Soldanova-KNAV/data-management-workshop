@@ -139,11 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
           const infoBox = document.createElement("div");
           infoBox.className = "tool-info";
 
-          // → omezení výšky infoBoxu podle výšky toolsList
-          const availableHeight = toolsList.clientHeight; // výška scrollovatelného kontejneru
-          infoBox.style.maxHeight = `${availableHeight}px`;
-          infoBox.style.overflowY = 'auto'; // scroll uvnitř boxu, pokud obsah přesahuje
-
           // Ikony, pokud existují (podpora pro jedno i více SVG souborů)
           if (tool.icon) {
             const icons = Array.isArray(tool.icon) ? tool.icon : [tool.icon];
