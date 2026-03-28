@@ -135,14 +135,14 @@
   },
   {
     "id_name": "fw",
-    "full_name": "FAIR Wizard",
+    "full_name": "AV ČR FAIR Wizard",
     "lifecycle_step": [
       "planning"
     ],
     "icon": [
       "infinity.svg"
     ],
-    "desc_short": "Service guiding creation of structured Data Management Plans via an interactive questionnaire, based on the Data Stewardship Wizard (DSW) platform. Supports addressing FAIR data principles, collaboration with colleagues, and exporting actionable DMPs in multiple formats for funder compliance and long-term stewardship.",
+    "desc_short": "Institutional instance of DSW for CAS researchers. Service guiding creation of structured Data Management Plans via an interactive questionnaire, based on the Data Stewardship Wizard (DSW) platform. Supports addressing FAIR data principles, collaboration with colleagues, and exporting actionable DMPs in multiple formats for funder compliance and long-term stewardship.",
     "link": "https://avcr.fair-wizard.com/"
   },
   {
@@ -1204,16 +1204,17 @@
     "link": "https://molstar.org/"
   },
   {
-    "id_name": "openrefine",
+    "id_name": "openrefineeunode",
     "full_name": "OpenRefine via EU Node Tool Hub",
     "lifecycle_step": [
-      "processing"
+      "processing",
+      "analyzing"
     ],
     "icon": [
       "user.svg",
       "world.svg"
     ],
-    "desc_short": "Free, open-source application accessed via browser (via EU Node platform without installation) for cleaning, transforming, and enriching \"messy\" tabular data (CSV, Excel, JSON). Features include faceting, clustering, bulk transformations, and history tracking to ensure reproducibility",
+    "desc_short": "Free, open-source application accessed via browser (via EU Node platform without installation) for cleaning, transforming, and enriching \"messy\" tabular data (CSV, Excel, JSON). Features include faceting, clustering, bulk transformations, and history tracking to ensure reproducibility.",
     "link": "https://open-science-cloud.ec.europa.eu/dashboard/tools-hub"
   },
   {
@@ -1337,7 +1338,7 @@
   },
   {
     "id_name": "argos",
-    "full_name": "Agros",
+    "full_name": "Argos",
     "lifecycle_step": [
       "planning"
     ],
@@ -1372,43 +1373,371 @@
     "link": "https://git-lfs.com/"
   },
   {
-    "id_name": null,
+    "id_name": "softwareheritage",
     "full_name": "Software Heritage",
-    "lifecycle_step": [],
-    "icon": [],
-    "desc_short": null,
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Open infrastructure for collecting, preserving, and sharing software source code from publicly available projects worldwide. Ensures long-term preservation of software as part of technical and scientific knowledge, providing a universal archive that supports code citation, reuse, and reproducibility.",
     "link": "https://www.softwareheritage.org/"
   },
   {
-    "id_name": null,
+    "id_name": "pytorch",
     "full_name": "PyTorch",
-    "lifecycle_step": [],
-    "icon": [],
-    "desc_short": null,
+    "lifecycle_step": [
+      "processing",
+      "analyzing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Open-source machine learning framework designed for building, training, and deploying neural network models. Provides a flexible environment with dynamic computation graphs, automatic differentiation, GPU acceleration, and a rich ecosystem of libraries, enabling efficient experimentation, rapid prototyping, and scalable research and production workflows.",
     "link": "https://pytorch.org/"
   },
   {
-    "id_name": null,
+    "id_name": "imagenet",
     "full_name": "ImageNet",
-    "lifecycle_step": [],
-    "icon": [],
-    "desc_short": "ImageNet is an image database organized according to the WordNet hierarchy (currently only the nouns), in which each node of the hierarchy is depicted by hundreds and thousands of images. The project has been instrumental in advancing computer vision and deep learning research. The data is available for free to researchers for non-commercial use.",
+    "lifecycle_step": [
+      "reusing",
+      "storing_archiving"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Large-scale image database organized according to the WordNet hierarchy, containing millions of annotated images across thousands of object categories. Widely used for training and benchmarking computer vision models, it has significantly contributed to advances in deep learning and is available for non-commercial research use.",
     "link": "https://www.image-net.org/"
   },
   {
-    "id_name": null,
-    "full_name": "nodegoat",
-    "lifecycle_step": [],
-    "icon": [],
-    "desc_short": null,
-    "link": null
+    "id_name": "nodegoat",
+    "full_name": "Nodegoat",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Web-based data management and analysis environment that allows researchers to build datasets based on custom data models. Provides relational analysis with spatial and chronological contextualization, enabling users to process, analyse, and visualize complex datasets relationally, diachronically, and spatially within a single integrated platform.",
+    "link": "https://nodegoat.net/"
   },
   {
-    "id_name": null,
+    "id_name": "redcap",
     "full_name": "REDCap",
-    "lifecycle_step": [],
-    "icon": [],
-    "desc_short": null,
-    "link": null
+    "lifecycle_step": [
+      "collecting",
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Secure web-based application for building and managing online surveys and databases. Supports collection of diverse data types across environments with compliance standards such as 21 CFR Part 11, FISMA, HIPAA, and GDPR, and is specifically designed for online and offline data capture in research studies and operational workflows.",
+    "link": "https://project-redcap.org/"
+  },
+  {
+    "id_name": "rdmw",
+    "full_name": "The Research Data Management Workbook",
+    "lifecycle_step": [
+      "planning"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Collection of structured exercises designed to help researchers improve their data management practices across the data lifecycle. Focuses on reproducible, discrete data management activities and serves as a supplementary resource to existing data management training and education.",
+    "link": "https://doi.org/10.7907/z6czh-7zx60"
+  },
+  {
+    "id_name": "fairsharing",
+    "full_name": "fairsharing",
+    "lifecycle_step": [
+      "storing_archiving",
+      "organizing_collaborating",
+      "planning"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Curated resource providing information on data and metadata standards, linked to databases and data policies. Supports discovery, selection, and use of standards, increases visibility and adoption of contributed resources, and provides trusted content for both human users and automated data management tools.",
+    "link": "https://fairsharing.org/"
+  },
+  {
+    "id_name": "wikidata",
+    "full_name": "Wikidata",
+    "lifecycle_step": [
+      "organizing_collaborating",
+      "reusing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Free and open knowledge base that can be read and edited by both humans and machines. Provides structured data to support a wide range of applications, including knowledge integration, semantic web technologies, and data reuse across platforms.",
+    "link": "https://www.wikidata.org/wiki/Wikidata:Main_Page"
+  },
+  {
+    "id_name": "jurism",
+    "full_name": "Jurism",
+    "lifecycle_step": [
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Reference management software designed for organizing bibliographic data, documents, and PDFs, with support for legal materials and multilingual sources. Enables automatic generation of citations, footnotes, and bibliographies, and integrates with word processors to ensure consistent and efficient referencing workflows.",
+    "link": "https://juris-m.github.io/"
+  },
+  {
+    "id_name": "spyder",
+    "full_name": "Spyder",
+    "lifecycle_step": [
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Open-source scientific environment and integrated development environment (IDE) for Python. Combines features of a comprehensive development tool with interactive data exploration capabilities, supporting efficient coding, analysis, and visualization in a single interface.",
+    "link": "https://www.spyder-ide.org/"
+  },
+  {
+    "id_name": "limesurvey",
+    "full_name": "Lime Survey",
+    "lifecycle_step": [
+      "collecting"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Open-source web-based application for creating and managing online surveys. Enables fast and anonymous data collection and is used by students, researchers, and organizations to design surveys and gather insights.",
+    "link": "https://www.limesurvey.org/"
+  },
+  {
+    "id_name": "peroocr",
+    "full_name": "Pero OCR",
+    "lifecycle_step": [
+      "processing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Optical character recognition tool for automatic transcription of printed and handwritten documents. Supports low-quality prints, multiple European languages (including Latin and Fraktur scripts), and handwritten Czech text, and provides tools for text correction and export in formats such as ALTO, PAGE XML, and plain text.",
+    "link": "https://pero-ocr.fit.vutbr.cz/"
+  },
+  {
+    "id_name": "scrbblesense",
+    "full_name": "ScribbleSense",
+    "lifecycle_step": [
+      "processing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "OCR application for high-accuracy transcription of printed documents in Latin, Greek, and Cyrillic scripts. Supports multiple languages including Czech, German, Spanish, Dutch, English, Slovenian, Polish, French, Italian, Greek, Ancient Greek, Belarusian, Bulgarian, Macedonian, Russian, Serbian, and Ukrainian, providing efficient post-processing and export for digitization of older or moderately damaged texts.",
+    "link": "https://scribblesense.cz/#/news"
+  },
+  {
+    "id_name": "atlasti",
+    "full_name": "Atlas.ti",
+    "lifecycle_step": [
+      "analyzing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Software for organizing, coding, and analysing qualitative data, including text, audio, video, and mixed formats. Provides features for annotation, visualization, and collaboration, supporting systematic analysis and improving transparency, rigor, and efficiency in qualitative research.",
+    "link": "https://atlasti.com/"
+  },
+  {
+    "id_name": "pspp",
+    "full_name": "PSPP",
+    "lifecycle_step": [
+      "analyzing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Free and open-source software for statistical analysis of sampled data. Serves as a replacement for proprietary statistical tools such as SPSS, offering a similar interface and functionality for data analysis.",
+    "link": "https://www.gnu.org/software/pspp/"
+  },
+  {
+    "id_name": "spss",
+    "full_name": "SPSS",
+    "lifecycle_step": [
+      "analyzing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Statistical software platform providing advanced data analysis, machine learning algorithms, and text analytics capabilities. Supports a wide range of statistical procedures for research and applied data analysis.",
+    "link": "https://www.ibm.com/products/spss"
+  },
+  {
+    "id_name": "stata",
+    "full_name": "Stata",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Statistical software environment for data management, analysis, and visualization across disciplines such as economics, social sciences, and public health. Supports the full research workflow from raw data processing to analytical outputs.",
+    "link": "https://www.stata.com/"
+  },
+  {
+    "id_name": "requal",
+    "full_name": "REQUAL",
+    "lifecycle_step": [
+      "analyzing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Free and open-source qualitative data analysis application for annotating text and qualitative data. Runs in web browsers using the Shiny framework for R and promotes reproducibility through transparency, openness, reflexivity, and collaborative workflows.",
+    "link": "https://requal.app/"
+  },
+  {
+    "id_name": "taguete",
+    "full_name": "Taguete",
+    "lifecycle_step": [
+      "analyzing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Free and open-source tool for qualitative research that enables users to import data, highlight and tag text segments, and export coded results. Supports systematic organization and analysis of qualitative materials.",
+    "link": "https://www.taguette.org/"
+  },
+  {
+    "id_name": "openrefine",
+    "full_name": "OpenRefine",
+    "lifecycle_step": [
+      "analyzing",
+      "processing"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Open-source tool for cleaning, transforming, and extending messy tabular data in formats such as CSV, Excel, and JSON. Provides features including faceting, clustering, bulk transformations, and history tracking to support reproducible data processing.",
+    "link": "https://openrefine.org/"
+  },
+  {
+    "id_name": "rdmkit",
+    "full_name": "The Research Data Management toolkit",
+    "lifecycle_step": [
+      "organizing_collaborating",
+      "planning"
+    ],
+    "icon": [
+      "infinity.svg",
+      "dna.svg"
+    ],
+    "desc_short": "Online guide supporting life scientists in managing research data according to FAIR principles. Provides practical guidance, best practices, and domain-specific recommendations across the data lifecycle.",
+    "link": "https://rdmkit.elixir-europe.org/"
+  },
+  {
+    "id_name": "dmeg",
+    "full_name": "Data Management Expert Guide",
+    "lifecycle_step": [
+      "organizing_collaborating",
+      "planning"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Online training resource covering archiving and management of research data. Presents the research data lifecycle through structured chapters, from planning and documentation to processing, storage, protection, and publication.",
+    "link": "https://dmeg.cessda.eu/Data-Management-Expert-Guide"
+  },
+  {
+    "id_name": "openmarketplace",
+    "full_name": "Open market place – DARIAH",
+    "lifecycle_step": [
+      "organizing_collaborating",
+      "planning"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Discovery portal aggregating and contextualizing tools, services, datasets, publications, training materials, and workflows for Social Sciences and Humanities research. Supports researchers across all stages of the research data lifecycle.",
+    "link": "https://marketplace.sshopencloud.eu/"
+  },
+  {
+    "id_name": "openairegraph",
+    "full_name": "OpenAIRE Graph",
+    "lifecycle_step": [
+      "reusing",
+      "planning"
+    ],
+    "icon": [
+      "infinity.svg"
+    ],
+    "desc_short": "Open research knowledge graph aggregating and interlinking metadata from hundreds of millions of research outputs across more than 100,000 data sources. Supports discovery, integration, and reuse of scholarly information for researchers, institutions, and automated services.",
+    "link": "https://graph.openaire.eu/"
+  },
+  {
+    "id_name": "elterri",
+    "full_name": "eLTER RI",
+    "lifecycle_step": [
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "world.svg",
+      "dna.svg",
+      "user.svg"
+    ],
+    "desc_short": "Integrated European research infrastructure for long-term ecosystem, critical zone, and socio-ecological research. Provides a service portal as a single access point to data, services, and research sites, supporting data integration, analysis, and synthesis across a distributed network of research platforms.",
+    "link": "https://elter-ri.eu/"
+  },
+  {
+    "id_name": "humanitiestools",
+    "full_name": "Catalogue of tools and resources for humanities",
+    "lifecycle_step": [
+      "planning"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Database providing access to tools and resources for research in the humanities. Supports discovery and selection of digital tools relevant to humanities research workflows.",
+    "link": "https://www.humanities.tools/cs"
+  },
+  {
+    "id_name": "consentformwizard",
+    "full_name": "Conset Form Wizard",
+    "lifecycle_step": [
+      "planning",
+      "collecting"
+    ],
+    "icon": [
+      "infinity.svg",
+      "user.svg"
+    ],
+    "desc_short": "Resource providing consent form templates for research scenarios involving personal data collection. Developed within the DARIAH-EU ELDAH working group to support ethical and legal compliance in digital arts and humanities research.",
+    "link": "https://consent.dariah.eu/form/dariah-eldah-consent-form-wizard"
+  },
+  {
+    "id_name": "lindat",
+    "full_name": "LINDAT",
+    "lifecycle_step": [
+      "organizing_collaborating"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Research infrastructure providing access to language resources, tools, and services for linguistics, language technologies, and digital humanities. Supports storage, processing, and sharing of language data, enabling advanced research and collaboration in language-based disciplines.",
+    "link": "https://lindat.cz/#tools"
+  },
+  {
+    "id_name": "lindatclariah",
+    "full_name": "LINDAT/CLARIAH-CZ",
+    "lifecycle_step": [
+      "storing_archiving",
+      "reusing"
+    ],
+    "icon": [
+      "user.svg"
+    ],
+    "desc_short": "Domain-specific research data repository focused on language technologies, linguistics, and the humanities. Enables deposition, storage, and sharing of datasets, tools, and software, ensuring long-term preservation, accessibility, and reuse of research outputs.",
+    "link": "https://lindat.mff.cuni.cz/repository/home"
   }
 ]
