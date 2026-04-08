@@ -1,6 +1,20 @@
 let toolsData = [];
 let activeIconFilter = null; // Doménový filtr podle ikon
 
+function scaleToFit() {
+  const wrapper = document.getElementById("scale-wrapper");
+  if (!wrapper) return;
+
+  const rect = wrapper.getBoundingClientRect();
+
+  const scaleX = window.innerWidth / rect.width;
+  const scaleY = window.innerHeight / rect.height;
+
+  const scale = Math.min(scaleX, scaleY, 1); // nikdy nezvětšuj nad 100 %
+
+  wrapper.style.transform =
+    `translate(-50%, -50%) scale(${scale})`;
+}
 
 fetch('dmtools.json')
   .then(response => response.json())
@@ -21,6 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const stepDescription = document.getElementById("step-description");
   const toolsList = document.getElementById("tools-list");
   const iconFilters = document.querySelectorAll(".icon-filter");
+  scaleToFit();
+  window.addEventListener("resize", scaleToFit);
 
   iconFilters.forEach(icon => {
     icon.addEventListener("click", () => {
@@ -80,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
   steps.forEach(step => {
     step.addEventListener("click", () => {
       const stepKey = step.dataset.step;
+      requestAnimationFrame(scaleToFit);
 
       steps.forEach(s => s.classList.remove("active"));
       step.classList.add("active");
@@ -128,6 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         li.addEventListener("click", (e) => {
           e.stopPropagation();
+          requestAnimationFrame(scaleToFit);
 
           document.querySelectorAll(".tool-item").forEach(t => t.classList.remove("active"));
           li.classList.add("active");
