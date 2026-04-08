@@ -12,11 +12,6 @@ body {
   font-size: 1.3rem;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* zakáže scrollování */
-  height: 100vh;     /* omezí výšku přesně na okno */
-  display: flex;
-  flex-direction: column;
-  zoom: 67%;
 }
 
 .page-wrapper {
