@@ -16,6 +16,8 @@ body {
   height: 100vh;     /* omezí výšku přesně na okno */
   display: flex;
   flex-direction: column;
+  transform: scale(0.8);
+  transform-origin: top left;
 }
 
 .page-wrapper {
