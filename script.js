@@ -10,10 +10,9 @@ function scaleToFit() {
   const scaleX = window.innerWidth / rect.width;
   const scaleY = window.innerHeight / rect.height;
 
-  const scale = Math.min(scaleX, scaleY, 1); // nikdy nezvětšuj nad 100 %
+  const scale = Math.min(scaleX, scaleY, 1);
 
-  wrapper.style.transform =
-    `translate(-50%, -50%) scale(${scale})`;
+  wrapper.style.transform = `scale(${scale})`;
 }
 
 fetch('dmtools.json')
