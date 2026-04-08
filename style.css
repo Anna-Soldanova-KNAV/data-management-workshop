@@ -427,4 +427,9 @@ h2 {
   left: 50%;
   transform-origin: top left;
   will-change: transform;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%; /* flex vyplní celý wrapper */
+  width: 100%;  /* flex zabere celou šířku */
 }
