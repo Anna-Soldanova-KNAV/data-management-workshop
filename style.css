@@ -430,7 +430,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;      
-  justify-content: flex-start; 
-  height: 100%;
-  width: 100%;
+  justify-content: flex-start;
+  width: 1200px;   /* fixed natural width — adjust to match your design */
+  height: 800px;   /* fixed natural height — adjust to match your design */
 }
