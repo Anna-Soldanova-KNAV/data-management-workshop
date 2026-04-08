@@ -423,13 +423,14 @@ h2 {
 
 #scale-wrapper {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   transform-origin: top left;
   will-change: transform;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100%; /* flex vyplní celý wrapper */
-  width: 100%;  /* flex zabere celou šířku */
+  height: 100%;
+  width: 100%;
 }
