@@ -388,7 +388,7 @@ h2 {
 }
 
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE DESIGN (needs improvement)*/
 @media (max-width: 960px) {
   .container {
     flex-direction: column;
@@ -412,4 +412,19 @@ h2 {
     max-width: 100%;
     width: 100%;
   }
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#scale-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: top left;
+  will-change: transform;
 }
