@@ -5,31 +5,11 @@ function scaleToFit() {
   const wrapper = document.getElementById("scale-wrapper");
   if (!wrapper) return;
 
-  const appWidth = window.innerWidth;
-  const appHeight = window.innerHeight;
-
-  const lifecycle = document.querySelector(".lifecycle");
-  const info = document.querySelector(".info");
-  const titleWrapper = document.querySelector(".title-wrapper");
-
-  if (!lifecycle || !info || !titleWrapper) return; // pokud něco neexistuje, ukonči
-
-  // šířka: kruh + info box + mezera
-  const totalWidth = Math.max(lifecycle.offsetWidth + 40, info.offsetWidth + 40);
-
-  // výška: nadpis + kruh / info + mezera
-  const minGap = 20; // minimální mezera mezi lifecycle a info
-  const totalHeight = titleWrapper.offsetHeight + Math.max(lifecycle.offsetHeight, info.offsetHeight) + minGap;
-
-  // scale podle šířky a výšky
-  const scaleX = appWidth / totalWidth;
-  const scaleY = appHeight / totalHeight;
-  const scale = Math.min(scaleX, scaleY, 1); // nikdy nezvětšovat nad 100%
+  const scaleX = window.innerWidth / 1200;   /* same value as width above */
+  const scaleY = window.innerHeight / 800;   /* same value as height above */
+  const scale = Math.min(scaleX, scaleY, 1);
 
   wrapper.style.transform = `translate(-50%, -50%) scale(${scale})`;
-
-  // zajistí, že info box nebude překrývat lifecycle
-  info.style.marginTop = `${lifecycle.offsetHeight + minGap}px`;
 }
 
 fetch('dmtools.json')
@@ -113,7 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
   steps.forEach(step => {
     step.addEventListener("click", () => {
       const stepKey = step.dataset.step;
-      requestAnimationFrame(scaleToFit);
 
       steps.forEach(s => s.classList.remove("active"));
       step.classList.add("active");
@@ -162,7 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         li.addEventListener("click", (e) => {
           e.stopPropagation();
-          requestAnimationFrame(scaleToFit);
 
           document.querySelectorAll(".tool-item").forEach(t => t.classList.remove("active"));
           li.classList.add("active");
