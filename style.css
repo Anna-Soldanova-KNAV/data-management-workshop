@@ -423,14 +423,14 @@ h2 {
 
 #scale-wrapper {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   transform-origin: top left;
   will-change: transform;
-
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;      
+  justify-content: flex-start; 
   height: 100%;
   width: 100%;
 }
