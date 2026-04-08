@@ -5,14 +5,31 @@ function scaleToFit() {
   const wrapper = document.getElementById("scale-wrapper");
   if (!wrapper) return;
 
-  const rect = wrapper.getBoundingClientRect();
+  const appWidth = window.innerWidth;
+  const appHeight = window.innerHeight;
 
-  const scaleX = window.innerWidth / rect.width;
-  const scaleY = window.innerHeight / rect.height;
+  const lifecycle = document.querySelector(".lifecycle");
+  const info = document.querySelector(".info");
+  const titleWrapper = document.querySelector(".title-wrapper");
 
-  const scale = Math.min(scaleX, scaleY, 1);
+  if (!lifecycle || !info || !titleWrapper) return; // pokud něco neexistuje, ukonči
 
-  wrapper.style.transform = `scale(${scale})`;
+  // šířka: kruh + info box + mezera
+  const totalWidth = Math.max(lifecycle.offsetWidth + 40, info.offsetWidth + 40);
+
+  // výška: nadpis + kruh / info + mezera
+  const minGap = 20; // minimální mezera mezi lifecycle a info
+  const totalHeight = titleWrapper.offsetHeight + Math.max(lifecycle.offsetHeight, info.offsetHeight) + minGap;
+
+  // scale podle šířky a výšky
+  const scaleX = appWidth / totalWidth;
+  const scaleY = appHeight / totalHeight;
+  const scale = Math.min(scaleX, scaleY, 1); // nikdy nezvětšovat nad 100%
+
+  wrapper.style.transform = `translate(-50%, -50%) scale(${scale})`;
+
+  // zajistí, že info box nebude překrývat lifecycle
+  info.style.marginTop = `${lifecycle.offsetHeight + minGap}px`;
 }
 
 fetch('dmtools.json')
@@ -36,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const iconFilters = document.querySelectorAll(".icon-filter");
   scaleToFit();
   window.addEventListener("resize", scaleToFit);
+  
 
   iconFilters.forEach(icon => {
     icon.addEventListener("click", () => {
