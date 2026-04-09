@@ -306,7 +306,7 @@ h2 {
 }
 
 .contact-box {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   left: 20px;
   background-color: #F0F0F0;
@@ -423,14 +423,9 @@ h2 {
 
 #scale-wrapper {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   transform-origin: top left;
-  will-change: transform;
-  display: flex;
-  flex-direction: column;
-  align-items: center;      
-  justify-content: flex-start;
-  width: 1200px;   /* fixed natural width — adjust to match your design */
-  height: 800px;   /* fixed natural height — adjust to match your design */
+  width: 1200px;
+  height: 800px;
 }
