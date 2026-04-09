@@ -5,11 +5,11 @@ function scaleToFit() {
   const wrapper = document.getElementById("scale-wrapper");
   if (!wrapper) return;
 
-  const scaleX = window.innerWidth / 1200;   /* same value as width above */
-  const scaleY = window.innerHeight / 800;   /* same value as height above */
-  const scale = Math.min(scaleX, scaleY, 1);
+  const scaleX = window.innerWidth / 1200;
+  const scaleY = window.innerHeight / 800;
+  const scale = Math.min(scaleX, scaleY);
 
-  wrapper.style.transform = `translate(-50%, -50%) scale(${scale})`;
+  wrapper.style.transform = `scale(${scale})`;
 }
 
 fetch('dmtools.json')
